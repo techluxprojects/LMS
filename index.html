@@ -1179,7 +1179,7 @@
               : "";
 
             html += `
-          <div class="video-card" data-video-id="${video.id}" data-start="${video.startSeconds || 0}" data-title="${title.replace(/"/g, "&quot;")}">
+          <div class="video-card" data-video-id="${video.id}" data-start="${video.startSeconds || 0}" data-end="${video.endSeconds || 0}" data-title="${title.replace(/"/g, "&quot;")}">
             <div class="thumbnail">
               ${thumbUrl ? `<img src="${thumbUrl}" alt="thumbnail" loading="lazy">` : '<div style="color:white; padding:20px;">🎬</div>'}
               <div class="play-overlay"><div class="play-icon"><i class="fas fa-play"></i></div></div>
@@ -1201,7 +1201,8 @@
             card.addEventListener("click", () => {
               const videoId = card.dataset.videoId;
               const startSec = parseInt(card.dataset.start, 10) || 0;
-              if (videoId) playVideoFullscreen(videoId, startSec);
+              const endSec = parseInt(card.dataset.end, 10) || 0;
+              if (videoId) playVideoFullscreen(videoId, startSec, endSec);
             });
 
             // Add keyboard support
@@ -1210,19 +1211,27 @@
                 e.preventDefault();
                 const videoId = card.dataset.videoId;
                 const startSec = parseInt(card.dataset.start, 10) || 0;
-                if (videoId) playVideoFullscreen(videoId, startSec);
+                const endSec = parseInt(card.dataset.end, 10) || 0;
+                if (videoId) playVideoFullscreen(videoId, startSec, endSec);
               }
             });
           });
         }
 
-        // Fullscreen playback with start time
-        function playVideoFullscreen(videoId, startSeconds = 0) {
+        // Fullscreen playback with start and end time
+        function playVideoFullscreen(
+          videoId,
+          startSeconds = 0,
+          endSeconds = 0,
+        ) {
           if (!videoId) return;
-          const startParam =
-            startSeconds > 0
-              ? `?start=${startSeconds}&autoplay=1&rel=0`
-              : `?autoplay=1&rel=0`;
+          let startParam = "?autoplay=1&rel=0";
+          if (startSeconds > 0 || endSeconds > 0) {
+            startParam = "?";
+            if (startSeconds > 0) startParam += `start=${startSeconds}&`;
+            if (endSeconds > 0) startParam += `end=${endSeconds}&`;
+            startParam += "autoplay=1&rel=0";
+          }
           const embedUrl = `https://www.youtube.com/embed/${videoId}${startParam}`;
           youtubeIframe.src = embedUrl;
           fullscreenOverlay.style.display = "flex";
