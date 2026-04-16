@@ -43,6 +43,8 @@
         --select-bg-light: #f1f5f9;
         --badge-bg: #eef2ff;
         --badge-color: #1e40af;
+        --grade-primary: #3b82f6;
+        --grade-primary-light: #dbeafe;
       }
 
       html.dark-mode {
@@ -56,9 +58,81 @@
         --bg-control: #1e293b;
         --select-bg: #0f172a;
         --select-bg-light: #1e293b;
-        --badge-bg: #2c303b;
+        --badge-bg: #1e293b;
         --badge-color: #60a5fa;
-        --primary-light: #d754f1;
+        --primary-light: #3b82f6;
+      }
+
+      /* Grade 6 - Green/Teal */
+      .grade-6 {
+        --grade-primary: #10b981;
+        --grade-primary-light: #d1fae5;
+        --grade-text-color: #065f46;
+      }
+      html.dark-mode .grade-6 {
+        --grade-primary: #10b981;
+        --grade-primary-light: #059669;
+        --grade-text-color: #d1fae5;
+      }
+
+      /* Grade 7 - Purple/Violet */
+      .grade-7 {
+        --grade-primary: #8b5cf6;
+        --grade-primary-light: #ede9fe;
+        --grade-text-color: #4c1d95;
+      }
+      html.dark-mode .grade-7 {
+        --grade-primary: #a78bfa;
+        --grade-primary-light: #6d28d9;
+        --grade-text-color: #ede9fe;
+      }
+
+      /* Grade 8 - Orange/Amber */
+      .grade-8 {
+        --grade-primary: #f59e0b;
+        --grade-primary-light: #fef3c7;
+        --grade-text-color: #78350f;
+      }
+      html.dark-mode .grade-8 {
+        --grade-primary: #fbbf24;
+        --grade-primary-light: #b45309;
+        --grade-text-color: #fef3c7;
+      }
+
+      /* Grade 9 - Red/Rose */
+      .grade-9 {
+        --grade-primary: #ef4444;
+        --grade-primary-light: #fee2e2;
+        --grade-text-color: #7f1d1d;
+      }
+      html.dark-mode .grade-9 {
+        --grade-primary: #f87171;
+        --grade-primary-light: #991b1b;
+        --grade-text-color: #fee2e2;
+      }
+
+      /* Grade 10 - Blue (default) */
+      .grade-10 {
+        --grade-primary: #3b82f6;
+        --grade-primary-light: #dbeafe;
+        --grade-text-color: #0c2340;
+      }
+      html.dark-mode .grade-10 {
+        --grade-primary: #60a5fa;
+        --grade-primary-light: #1e40af;
+        --grade-text-color: #dbeafe;
+      }
+
+      /* Grade 11 - Pink/Fuchsia */
+      .grade-11 {
+        --grade-primary: #ec4899;
+        --grade-primary-light: #fce7f3;
+        --grade-text-color: #500724;
+      }
+      html.dark-mode .grade-11 {
+        --grade-primary: #f472b6;
+        --grade-primary-light: #831843;
+        --grade-text-color: #fce7f3;
       }
 
       body {
@@ -242,10 +316,10 @@
         gap: 6px;
         background: linear-gradient(
           135deg,
-          var(--badge-bg) 0%,
-          var(--primary-light) 100%
+          var(--grade-primary-light) 0%,
+          var(--grade-primary) 100%
         );
-        color: var(--badge-color);
+        color: var(--grade-text-color);
         padding: 8px 18px;
         border-radius: 40px;
         font-size: 0.95rem;
@@ -274,10 +348,10 @@
       .video-count {
         background: linear-gradient(
           135deg,
-          var(--primary-light) 0%,
-          var(--select-bg-light) 100%
+          var(--grade-primary-light) 0%,
+          var(--grade-primary) 100%
         );
-        color: var(--badge-color);
+        color: var(--grade-text-color);
         padding: 10px 20px;
         border-radius: 32px;
         font-size: 0.95rem;
@@ -290,10 +364,10 @@
       .video-count-badge {
         background: linear-gradient(
           135deg,
-          var(--primary-light) 0%,
-          var(--select-bg-light) 100%
+          var(--grade-primary-light) 0%,
+          var(--grade-primary) 100%
         );
-        color: var(--badge-color);
+        color: var(--grade-text-color);
         padding: 8px 18px;
         border-radius: 40px;
         font-weight: 500;
@@ -886,9 +960,7 @@
           },
           9: {
             name: "Grade 9",
-            lessons: {
-              light: {},
-            },
+            lessons: {},
           },
           10: {
             name: "Grade 10",
@@ -1189,6 +1261,19 @@
         // Update UI when selectors change
         function handleGradeChange() {
           currentGrade = gradeSelect.value;
+
+          // Apply grade color class
+          const dashboard = document.querySelector(".dashboard");
+          dashboard.classList.remove(
+            "grade-6",
+            "grade-7",
+            "grade-8",
+            "grade-9",
+            "grade-10",
+            "grade-11",
+          );
+          dashboard.classList.add(`grade-${currentGrade}`);
+
           populateLessons(currentGrade);
           currentLessonKey = lessonSelect.value;
           populateTopics(currentGrade, currentLessonKey);
@@ -1260,6 +1345,11 @@
           // set initial grade 10 as default (matching earlier)
           currentGrade = "10";
           gradeSelect.value = "10";
+
+          // Apply initial grade color class
+          const dashboard = document.querySelector(".dashboard");
+          dashboard.classList.add("grade-10");
+
           populateLessons("10");
           currentLessonKey = "motion";
           lessonSelect.value = "motion";
