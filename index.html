@@ -552,6 +552,12 @@
         border: 0;
         background: white;
       }
+      .note-embed {
+        width: 100%;
+        height: 100%;
+        border: 0;
+        background: white;
+      }
       @media (max-width: 768px) {
         .header {
           flex-direction: column;
@@ -715,6 +721,17 @@
           class="note-frame"
           title="Lesson Resource Reader"
         ></iframe>
+        <object
+          id="noteResourceEmbed"
+          class="note-embed"
+          type="application/pdf"
+          style="display: none"
+        >
+          <div class="empty-state" style="margin: 24px">
+            <h3>Resource preview is not available</h3>
+            <p>Use the button below to open the file directly if your browser blocks embedded previews.</p>
+          </div>
+        </object>
       </div>
     </div>
 
@@ -2818,6 +2835,7 @@
         const noteModal = document.getElementById("noteModal");
         const closeNoteModalBtn = document.getElementById("closeNoteModalBtn");
         const noteReaderFrame = document.getElementById("noteReaderFrame");
+        const noteResourceEmbed = document.getElementById("noteResourceEmbed");
         const noteModalTitle = document.getElementById("noteModalTitle");
         const noteModalGrade = document.getElementById("noteModalGrade");
         const noteModalLesson = document.getElementById("noteModalLesson");
@@ -3102,30 +3120,44 @@
             }) || null
           );
         }
+        function resetResourceViewer() {
+          noteReaderFrame.style.display = "block";
+          noteResourceEmbed.style.display = "none";
+          noteReaderFrame.src = "about:blank";
+          noteReaderFrame.srcdoc = "";
+          noteResourceEmbed.removeAttribute("data");
+          noteResourceEmbed.type = "application/pdf";
+        }
         function openNoteById(noteId) {
           const note = findNoteById(noteId);
           if (!note) return;
-          if (note.filePath) {
-            const resourceUrl = encodeURI(note.filePath);
-            const resourceWindow = window.open(resourceUrl, "_blank", "noopener");
-            if (!resourceWindow) {
-              window.location.href = resourceUrl;
-            }
-            return;
-          }
           noteModalTitle.textContent = note.title;
           noteModalGrade.textContent = note.grade;
           noteModalLesson.textContent = note.lesson;
-          printNoteBtn.style.display = "inline-flex";
-          noteReaderFrame.removeAttribute("src");
-          noteReaderFrame.srcdoc = buildReaderDocument(note);
+          resetResourceViewer();
+          if (note.filePath) {
+            const resourceUrl = encodeURI(note.filePath);
+            const lowerPath = note.filePath.toLowerCase();
+            printNoteBtn.style.display = "none";
+            if (lowerPath.endsWith(".pdf")) {
+              noteReaderFrame.style.display = "none";
+              noteResourceEmbed.style.display = "block";
+              noteResourceEmbed.type = "application/pdf";
+              noteResourceEmbed.data = resourceUrl;
+            } else {
+              noteReaderFrame.src = resourceUrl;
+            }
+          } else {
+            printNoteBtn.style.display = "inline-flex";
+            noteReaderFrame.removeAttribute("src");
+            noteReaderFrame.srcdoc = buildReaderDocument(note);
+          }
           noteModal.style.display = "flex";
           document.body.style.overflow = "hidden";
         }
         function closeNoteModal() {
           noteModal.style.display = "none";
-          noteReaderFrame.src = "about:blank";
-          noteReaderFrame.srcdoc = "";
+          resetResourceViewer();
           document.body.style.overflow = "";
         }
         function playVideoFullscreen(videoId, startSeconds, endSeconds) {
