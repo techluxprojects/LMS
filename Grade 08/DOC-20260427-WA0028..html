@@ -1,0 +1,1578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grade 8 Science – Chapter 9: Human Organ Systems | 16 Worksheets</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --blue: #1a5fa8;
+    --blue-light: #e8f1fb;
+    --teal: #1a8a7a;
+    --teal-light: #e4f5f2;
+    --orange: #e07b2a;
+    --orange-light: #fef3e8;
+    --red: #c0392b;
+    --red-light: #fdecea;
+    --purple: #6c3fa0;
+    --purple-light: #f2ecfb;
+    --green: #2e7d32;
+    --green-light: #eaf4eb;
+    --grey: #f4f4f4;
+    --text: #1a1a2e;
+    --border: #d0d8e8;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Nunito', sans-serif;
+    background: #e8ecf5;
+    color: var(--text);
+  }
+
+  /* ===== WORKSHEET PAGE ===== */
+  .worksheet {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 18px auto;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 18px rgba(0,0,0,0.13);
+    padding: 14mm 14mm 10mm 14mm;
+    page-break-after: always;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* ===== HEADER ===== */
+  .ws-header {
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2.5px solid var(--accent-color);
+  }
+  .ws-header-badge {
+    background: var(--accent-color);
+    color: #fff;
+    min-width: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 10px;
+    font-size: 10px;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+  }
+  .ws-header-badge .ws-num {
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 1;
+    display: block;
+  }
+  .ws-header-info {
+    flex: 1;
+    padding: 8px 12px;
+    background: #fff;
+  }
+  .ws-header-info .school {
+    font-size: 9.5px;
+    font-weight: 700;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .ws-header-info .chapter-title {
+    font-size: 15px;
+    font-weight: 900;
+    color: var(--accent-color);
+    line-height: 1.2;
+    margin: 2px 0;
+  }
+  .ws-header-info .ws-topic {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--text);
+  }
+  .ws-header-meta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    padding: 8px 12px;
+    background: var(--accent-light);
+    border-left: 2px solid var(--accent-color);
+    min-width: 120px;
+  }
+  .ws-header-meta .meta-row {
+    font-size: 9px;
+    font-weight: 700;
+    color: #444;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+  }
+  .ws-header-meta .meta-row span {
+    border-bottom: 1.5px solid var(--accent-color);
+    min-width: 55px;
+    display: inline-block;
+  }
+
+  /* ===== OBJECTIVES BOX ===== */
+  .objectives {
+    background: var(--accent-light);
+    border-left: 4px solid var(--accent-color);
+    border-radius: 0 6px 6px 0;
+    padding: 6px 10px;
+    margin-bottom: 10px;
+    font-size: 10px;
+    color: #333;
+  }
+  .objectives strong { color: var(--accent-color); font-size: 10.5px; }
+
+  /* ===== SECTION HEADING ===== */
+  .section-heading {
+    font-size: 11.5px;
+    font-weight: 800;
+    color: #fff;
+    background: var(--accent-color);
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin: 10px 0 6px 0;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .section-heading .q-icon {
+    background: rgba(255,255,255,0.25);
+    border-radius: 50%;
+    width: 18px; height: 18px;
+    display: inline-flex; align-items: center; justify-content: center;
+    font-size: 10px;
+    font-weight: 900;
+  }
+
+  /* ===== QUESTIONS ===== */
+  .q-block {
+    margin-bottom: 9px;
+  }
+  .q-text {
+    font-size: 10.5px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 4px;
+    line-height: 1.5;
+  }
+  .q-text .q-num {
+    color: var(--accent-color);
+    font-weight: 900;
+    margin-right: 3px;
+  }
+
+  /* Answer lines */
+  .answer-lines { margin: 3px 0 0 14px; }
+  .answer-line {
+    border-bottom: 1.2px solid #bbb;
+    height: 17px;
+    margin-bottom: 3px;
+    width: 100%;
+  }
+  .answer-line-short { width: 60%; }
+  .answer-line-med { width: 80%; }
+
+  /* Fill blanks */
+  .fill-text {
+    font-size: 10.5px;
+    line-height: 2.1;
+    color: var(--text);
+    margin-left: 14px;
+  }
+  .blank {
+    display: inline-block;
+    min-width: 80px;
+    border-bottom: 1.5px solid var(--accent-color);
+    margin: 0 3px;
+  }
+
+  /* MCQ */
+  .mcq-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3px 12px;
+    margin: 4px 0 0 16px;
+  }
+  .mcq-opt {
+    font-size: 10px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .mcq-circle {
+    width: 14px; height: 14px;
+    border: 1.5px solid #999;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  /* Match table */
+  .match-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 10px;
+    margin-left: 14px;
+    margin-top: 4px;
+  }
+  .match-table td {
+    padding: 4px 8px;
+    border: 1.2px solid var(--border);
+    vertical-align: middle;
+  }
+  .match-table .col-a { background: var(--accent-light); font-weight: 700; width: 36%; }
+  .match-table .col-arrow { text-align: center; width: 8%; color: #aaa; }
+  .match-table .col-blank { width: 20%; }
+  .match-table .col-b { width: 36%; color: #555; }
+
+  /* Label diagram */
+  .diagram-box {
+    border: 1.5px dashed var(--border);
+    border-radius: 6px;
+    padding: 8px;
+    margin: 6px 0 4px 0;
+    background: #fafafa;
+  }
+  .diagram-box .d-instruction {
+    font-size: 9.5px;
+    color: #777;
+    font-style: italic;
+    margin-bottom: 4px;
+  }
+  .label-lines {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 12px;
+    margin-top: 4px;
+  }
+  .label-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 10px;
+    color: #555;
+  }
+  .label-num {
+    font-weight: 800;
+    color: var(--accent-color);
+    min-width: 15px;
+  }
+  .label-blank {
+    border-bottom: 1.3px solid #999;
+    min-width: 90px;
+    height: 14px;
+    display: inline-block;
+  }
+
+  /* True/False */
+  .tf-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 10px;
+    margin: 4px 0 0 14px;
+  }
+  .tf-table th {
+    background: var(--accent-color);
+    color: #fff;
+    padding: 4px 8px;
+    font-size: 10px;
+    font-weight: 700;
+    text-align: left;
+  }
+  .tf-table td {
+    padding: 5px 8px;
+    border-bottom: 1px solid var(--border);
+    font-size: 10px;
+  }
+  .tf-table tr:nth-child(even) td { background: var(--accent-light); }
+  .tf-check { text-align: center; width: 50px; }
+  .tf-box {
+    width: 16px; height: 16px;
+    border: 1.5px solid #999;
+    border-radius: 3px;
+    display: inline-block;
+  }
+
+  /* Word bank */
+  .word-bank {
+    background: var(--accent-light);
+    border: 1.5px solid var(--accent-color);
+    border-radius: 6px;
+    padding: 6px 10px;
+    margin: 4px 0 8px 0;
+    font-size: 10px;
+  }
+  .word-bank strong { color: var(--accent-color); font-size: 10px; }
+  .word-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 4px;
+  }
+  .word-chip {
+    background: #fff;
+    border: 1.2px solid var(--accent-color);
+    border-radius: 20px;
+    padding: 2px 9px;
+    font-size: 9.5px;
+    font-weight: 700;
+    color: var(--accent-color);
+  }
+
+  /* Table for data */
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 10px;
+    margin: 5px 0;
+  }
+  .data-table th {
+    background: var(--accent-color);
+    color: #fff;
+    padding: 5px 8px;
+    font-weight: 700;
+    text-align: left;
+    font-size: 10px;
+  }
+  .data-table td {
+    padding: 6px 8px;
+    border: 1.2px solid var(--border);
+    vertical-align: top;
+  }
+  .data-table tr:nth-child(even) td { background: var(--grey); }
+  .data-table .fill-cell {
+    border-bottom: 1.2px solid #aaa;
+    min-width: 80px;
+    height: 20px;
+  }
+
+  /* Info box */
+  .info-box {
+    background: var(--accent-light);
+    border-left: 4px solid var(--accent-color);
+    border-radius: 0 6px 6px 0;
+    padding: 7px 10px;
+    margin: 6px 0;
+    font-size: 10px;
+    line-height: 1.7;
+  }
+  .info-box strong { color: var(--accent-color); }
+
+  /* Scenario */
+  .scenario {
+    background: #fffde7;
+    border: 1.5px solid #f9a825;
+    border-radius: 6px;
+    padding: 7px 10px;
+    font-size: 10px;
+    font-style: italic;
+    color: #444;
+    margin-bottom: 7px;
+    line-height: 1.6;
+  }
+  .scenario strong { color: #f57f17; font-style: normal; }
+
+  /* Flow chart */
+  .flow-row {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 5px 0;
+    flex-wrap: wrap;
+  }
+  .flow-box {
+    border: 1.5px solid var(--accent-color);
+    border-radius: 5px;
+    padding: 4px 10px;
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--accent-color);
+    background: var(--accent-light);
+    text-align: center;
+    min-width: 80px;
+  }
+  .flow-blank {
+    border: 1.5px dashed #aaa;
+    border-radius: 5px;
+    padding: 4px 10px;
+    font-size: 10px;
+    min-width: 90px;
+    height: 28px;
+    background: #fafafa;
+  }
+  .flow-arrow {
+    font-size: 14px;
+    color: #aaa;
+    font-weight: 900;
+  }
+
+  /* Footer */
+  .ws-footer {
+    margin-top: auto;
+    padding-top: 8px;
+    border-top: 1.5px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 9px;
+    color: #888;
+    position: absolute;
+    bottom: 10mm;
+    left: 14mm;
+    right: 14mm;
+  }
+  .ws-footer .score-box {
+    border: 1.5px solid var(--border);
+    border-radius: 4px;
+    padding: 2px 12px;
+    font-size: 10px;
+    font-weight: 700;
+    color: #555;
+  }
+
+  /* Reflection box */
+  .reflection {
+    border: 1.5px dashed var(--border);
+    border-radius: 6px;
+    padding: 6px 10px;
+    font-size: 9.5px;
+    color: #888;
+    margin-top: 8px;
+    text-align: center;
+  }
+
+  /* ===== PRINT ===== */
+  @media print {
+    body { background: #fff; }
+    .worksheet {
+      margin: 0;
+      box-shadow: none;
+      border-radius: 0;
+      page-break-after: always;
+    }
+    .no-print { display: none; }
+  }
+
+  /* ===== PRINT BUTTON ===== */
+  .print-btn {
+    position: fixed;
+    top: 18px;
+    right: 22px;
+    z-index: 999;
+    background: var(--blue);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 22px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(26,95,168,0.35);
+    transition: background 0.2s;
+  }
+  .print-btn:hover { background: #154e8e; }
+
+  /* ===== Color themes per worksheet ===== */
+  .theme-blue  { --accent-color: #1a5fa8; --accent-light: #e8f1fb; }
+  .theme-teal  { --accent-color: #1a8a7a; --accent-light: #e4f5f2; }
+  .theme-orange{ --accent-color: #c76b1a; --accent-light: #fef0e4; }
+  .theme-red   { --accent-color: #b03028; --accent-light: #fdecea; }
+  .theme-purple{ --accent-color: #6c3fa0; --accent-light: #f2ecfb; }
+  .theme-green { --accent-color: #2e7d32; --accent-light: #eaf4eb; }
+  .theme-indigo{ --accent-color: #303f9f; --accent-light: #e8eaf6; }
+  .theme-brown { --accent-color: #5d4037; --accent-light: #efebe9; }
+</style>
+</head>
+<body>
+
+<button class="print-btn no-print" onclick="window.print()">🖨 Print All Worksheets</button>
+
+<!-- ===================== WORKSHEET 1 ===================== -->
+<div class="worksheet theme-blue">
+  <div class="ws-header">
+    <div class="ws-header-badge"><span class="ws-num">01</span>Worksheet</div>
+    <div class="ws-header-info">
+      <div class="school">St. Michael's College, Negombo &nbsp;|&nbsp; Grade 8 Science</div>
+      <div class="chapter-title">Chapter 9: Human Organ Systems</div>
+      <div class="ws-topic">Topic: Introduction to Excretion &amp; Excretory Products</div>
+    </div>
+    <div class="ws-header-meta">
+      <div class="meta-row">Name: <span></span></div>
+      <div class="meta-row">Date: <span></span></div>
+      <div class="meta-row">Class: <span></span></div>
+    </div>
+  </div>
+
+  <div class="objectives"><strong>🎯 Learning Objectives:</strong> Define excretion. Identify excretory products and distinguish them from faeces.</div>
+
+  <div class="section-heading"><span class="q-icon">A</span> Part A – Fill in the Blanks</div>
+  <div class="word-bank"><strong>📦 Word Bank:</strong>
+    <div class="word-chips">
+      <span class="word-chip">excretion</span><span class="word-chip">excretory products</span><span class="word-chip">carbon dioxide</span>
+      <span class="word-chip">urea</span><span class="word-chip">uric acid</span><span class="word-chip">faeces</span>
+      <span class="word-chip">cells</span><span class="word-chip">harmful</span><span class="word-chip">water</span>
+    </div>
+  </div>
+  <div class="fill-text">
+    1. The useless products produced during chemical reactions within the <span class="blank"></span> are known as <span class="blank"></span>.<br>
+    2. The process of removing excretory products from the body is called <span class="blank"></span>.<br>
+    3. Exhaled air contains <span class="blank"></span> and <span class="blank"></span>.<br>
+    4. Urine contains <span class="blank"></span>, <span class="blank"></span>, water and salts.<br>
+    5. <span class="blank"></span> is the waste remaining after food is digested and is <strong>not</strong> an excretory product.
+  </div>
+
+  <div class="section-heading"><span class="q-icon">B</span> Part B – Short Answer Questions</div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">6.</span> What are excretory products? Give one example.</div>
+    <div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div></div>
+  </div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">7.</span> Why must excretory products be removed from the body?</div>
+    <div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div></div>
+  </div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">8.</span> Why is faeces NOT considered an excretory product?</div>
+    <div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div></div>
+  </div>
+
+  <div class="section-heading"><span class="q-icon">C</span> Part C – Complete the Table</div>
+  <table class="data-table">
+    <tr><th>Excretory Organ</th><th>Excretory Products</th><th>Form of Excretion</th></tr>
+    <tr><td>Lungs</td><td class="fill-cell"></td><td class="fill-cell"></td></tr>
+    <tr><td class="fill-cell"></td><td>Urea, uric acid, salts, water</td><td class="fill-cell"></td></tr>
+    <tr><td>Skin</td><td class="fill-cell"></td><td>As sweat</td></tr>
+  </table>
+
+  <div class="section-heading"><span class="q-icon">D</span> Part D – Think &amp; Respond</div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">9.</span> During respiration, glucose reacts with oxygen. Write the products formed and state which are useful and which are excretory.</div>
+    <div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div></div>
+  </div>
+
+  <div class="reflection">💭 Reflection: I understood this topic: ☐ Very well &nbsp; ☐ Somewhat &nbsp; ☐ Need help</div>
+  <div class="ws-footer"><span>Chapter 9 | Worksheet 01 of 16</span><span class="score-box">Score: _______ / 20</span></div>
+</div>
+
+<!-- ===================== WORKSHEET 2 ===================== -->
+<div class="worksheet theme-teal">
+  <div class="ws-header">
+    <div class="ws-header-badge"><span class="ws-num">02</span>Worksheet</div>
+    <div class="ws-header-info">
+      <div class="school">St. Michael's College, Negombo &nbsp;|&nbsp; Grade 8 Science</div>
+      <div class="chapter-title">Chapter 9: Human Organ Systems</div>
+      <div class="ws-topic">Topic: The Human Urinary System – Parts &amp; Structure</div>
+    </div>
+    <div class="ws-header-meta">
+      <div class="meta-row">Name: <span></span></div>
+      <div class="meta-row">Date: <span></span></div>
+      <div class="meta-row">Class: <span></span></div>
+    </div>
+  </div>
+  <div class="objectives"><strong>🎯 Learning Objectives:</strong> Identify and name the four main parts of the urinary system and describe their roles.</div>
+
+  <div class="section-heading"><span class="q-icon">A</span> Part A – Label the Diagram</div>
+  <div class="diagram-box">
+    <div class="d-instruction">The diagram below represents the human urinary system. Write the correct label for each numbered part (1–6).</div>
+    <div style="text-align:center; font-size:11px; color:#aaa; padding: 28px 0; border: 1.5px dashed #ccc; border-radius:6px; margin:4px 0;">[ Diagram of Urinary System – Refer to Figure 9.2 in your textbook ]</div>
+    <div class="label-lines">
+      <div class="label-item"><span class="label-num">1.</span><span class="label-blank"></span></div>
+      <div class="label-item"><span class="label-num">2.</span><span class="label-blank"></span></div>
+      <div class="label-item"><span class="label-num">3.</span><span class="label-blank"></span></div>
+      <div class="label-item"><span class="label-num">4.</span><span class="label-blank"></span></div>
+      <div class="label-item"><span class="label-num">5.</span><span class="label-blank"></span></div>
+      <div class="label-item"><span class="label-num">6.</span><span class="label-blank"></span></div>
+    </div>
+  </div>
+
+  <div class="section-heading"><span class="q-icon">B</span> Part B – Match the Function</div>
+  <table class="match-table">
+    <tr><td class="col-a">Kidney</td><td class="col-arrow">→</td><td class="col-blank"></td><td class="col-b">Carries urine from bladder outside</td></tr>
+    <tr><td class="col-a">Ureter</td><td class="col-arrow">→</td><td class="col-blank"></td><td class="col-b">Filters blood and produces urine</td></tr>
+    <tr><td class="col-a">Bladder</td><td class="col-arrow">→</td><td class="col-blank"></td><td class="col-b">Transports urine from kidney to bladder</td></tr>
+    <tr><td class="col-a">Urethra</td><td class="col-arrow">→</td><td class="col-blank"></td><td class="col-b">Temporarily stores urine</td></tr>
+  </table>
+
+  <div class="section-heading"><span class="q-icon">C</span> Part C – Short Answer</div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">5.</span> Why is the urinary system called the "main nitrogenous excretory system"?</div>
+    <div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div></div>
+  </div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">6.</span> What vessels supply and drain blood from the kidneys? State their names and functions.</div>
+    <div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div></div>
+  </div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">7.</span> Describe the position of the kidneys in the human body. Why is the right kidney slightly lower?</div>
+    <div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div></div>
+  </div>
+
+  <div class="section-heading"><span class="q-icon">D</span> Part D – True or False</div>
+  <table class="tf-table">
+    <tr><th>Statement</th><th class="tf-check">True</th><th class="tf-check">False</th></tr>
+    <tr><td>The urinary system has five main parts.</td><td class="tf-check"><span class="tf-box"></span></td><td class="tf-check"><span class="tf-box"></span></td></tr>
+    <tr><td>The renal artery carries blood away from the kidney.</td><td class="tf-check"><span class="tf-box"></span></td><td class="tf-check"><span class="tf-box"></span></td></tr>
+    <tr><td>Each kidney in an adult is about 13 cm long and 6 cm wide.</td><td class="tf-check"><span class="tf-box"></span></td><td class="tf-check"><span class="tf-box"></span></td></tr>
+    <tr><td>The kidneys are bean-shaped organs.</td><td class="tf-check"><span class="tf-box"></span></td><td class="tf-check"><span class="tf-box"></span></td></tr>
+  </table>
+
+  <div class="reflection">💭 Reflection: I understood this topic: ☐ Very well &nbsp; ☐ Somewhat &nbsp; ☐ Need help</div>
+  <div class="ws-footer"><span>Chapter 9 | Worksheet 02 of 16</span><span class="score-box">Score: _______ / 20</span></div>
+</div>
+
+<!-- ===================== WORKSHEET 3 ===================== -->
+<div class="worksheet theme-orange">
+  <div class="ws-header">
+    <div class="ws-header-badge"><span class="ws-num">03</span>Worksheet</div>
+    <div class="ws-header-info">
+      <div class="school">St. Michael's College, Negombo &nbsp;|&nbsp; Grade 8 Science</div>
+      <div class="chapter-title">Chapter 9: Human Organ Systems</div>
+      <div class="ws-topic">Topic: Internal Structure of the Kidney &amp; Urine Composition</div>
+    </div>
+    <div class="ws-header-meta">
+      <div class="meta-row">Name: <span></span></div>
+      <div class="meta-row">Date: <span></span></div>
+      <div class="meta-row">Class: <span></span></div>
+    </div>
+  </div>
+  <div class="objectives"><strong>🎯 Learning Objectives:</strong> Describe the internal structure of a kidney and list the components of urine.</div>
+
+  <div class="section-heading"><span class="q-icon">A</span> Part A – Label the Kidney Cross-Section</div>
+  <div class="diagram-box">
+    <div class="d-instruction">Refer to Figure 9.5 in your textbook. Name the parts numbered 1–5 in the longitudinal section of the kidney.</div>
+    <div style="text-align:center; font-size:11px; color:#aaa; padding: 28px 0; border: 1.5px dashed #ccc; border-radius:6px; margin:4px 0;">[ Longitudinal section diagram of kidney ]</div>
+    <div class="label-lines">
+      <div class="label-item"><span class="label-num">1.</span><span class="label-blank"></span></div>
+      <div class="label-item"><span class="label-num">2.</span><span class="label-blank"></span></div>
+      <div class="label-item"><span class="label-num">3.</span><span class="label-blank"></span></div>
+      <div class="label-item"><span class="label-num">4.</span><span class="label-blank"></span></div>
+      <div class="label-item"><span class="label-num">5.</span><span class="label-blank"></span></div>
+    </div>
+  </div>
+
+  <div class="section-heading"><span class="q-icon">B</span> Part B – Fill in the Blanks</div>
+  <div class="word-bank"><strong>📦 Word Bank:</strong>
+    <div class="word-chips">
+      <span class="word-chip">cortex</span><span class="word-chip">medulla</span><span class="word-chip">renal pelvis</span>
+      <span class="word-chip">renal pyramids</span><span class="word-chip">ureter</span><span class="word-chip">dark</span><span class="word-chip">triangular</span>
+    </div>
+  </div>
+  <div class="fill-text">
+    1. A kidney consists of two major parts: the <span class="blank"></span> and the <span class="blank"></span>.<br>
+    2. The renal cortex is <span class="blank"></span> in colour because it has many blood capillaries.<br>
+    3. Within the renal medulla there are <span class="blank"></span> shaped structures called <span class="blank"></span>.<br>
+    4. The tips of the renal pyramids point towards the <span class="blank"></span>, which narrows and opens into the <span class="blank"></span>.
+  </div>
+
+  <div class="section-heading"><span class="q-icon">C</span> Part C – Urine Composition</div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">5.</span> List the four components of urine:</div>
+    <div class="answer-lines">
+      <div class="answer-line answer-line-short"></div>
+      <div class="answer-line answer-line-short"></div>
+      <div class="answer-line answer-line-short"></div>
+      <div class="answer-line answer-line-short"></div>
+    </div>
+  </div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">6.</span> Complete the table showing the percentage composition of healthy urine:</div>
+    <table class="data-table">
+      <tr><th>Component</th><th>Approximate Percentage</th></tr>
+      <tr><td>Water</td><td class="fill-cell"></td></tr>
+      <tr><td>Urea</td><td class="fill-cell"></td></tr>
+      <tr><td>Salts</td><td class="fill-cell"></td></tr>
+      <tr><td>Uric acid</td><td class="fill-cell"></td></tr>
+    </table>
+  </div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">7.</span> How can the components and colour of urine be useful to doctors?</div>
+    <div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div></div>
+  </div>
+
+  <div class="reflection">💭 Reflection: I understood this topic: ☐ Very well &nbsp; ☐ Somewhat &nbsp; ☐ Need help</div>
+  <div class="ws-footer"><span>Chapter 9 | Worksheet 03 of 16</span><span class="score-box">Score: _______ / 20</span></div>
+</div>
+
+<!-- ===================== WORKSHEET 4 ===================== -->
+<div class="worksheet theme-red">
+  <div class="ws-header">
+    <div class="ws-header-badge"><span class="ws-num">04</span>Worksheet</div>
+    <div class="ws-header-info">
+      <div class="school">St. Michael's College, Negombo &nbsp;|&nbsp; Grade 8 Science</div>
+      <div class="chapter-title">Chapter 9: Human Organ Systems</div>
+      <div class="ws-topic">Topic: Kidney Diseases &amp; How to Maintain Healthy Kidneys</div>
+    </div>
+    <div class="ws-header-meta">
+      <div class="meta-row">Name: <span></span></div>
+      <div class="meta-row">Date: <span></span></div>
+      <div class="meta-row">Class: <span></span></div>
+    </div>
+  </div>
+  <div class="objectives"><strong>🎯 Learning Objectives:</strong> Describe kidney diseases, their causes, and list practices for maintaining healthy kidneys.</div>
+
+  <div class="section-heading"><span class="q-icon">A</span> Part A – Kidney Diseases: Causes &amp; Effects</div>
+  <table class="data-table">
+    <tr><th>Disease</th><th>What happens?</th><th>Give TWO causes</th></tr>
+    <tr><td><strong>Kidney Stones</strong></td><td class="fill-cell"></td><td class="fill-cell"></td></tr>
+    <tr><td><strong>Kidney Failure</strong></td><td class="fill-cell"></td><td class="fill-cell"></td></tr>
+    <tr><td><strong>Kidney Infection</strong></td><td class="fill-cell"></td><td class="fill-cell"></td></tr>
+  </table>
+
+  <div class="section-heading"><span class="q-icon">B</span> Part B – Scenario Questions</div>
+  <div class="scenario"><strong>Scenario 1:</strong> Kavya drinks very little water and loves eating very salty snacks every day. She also delays using the toilet for hours. One day she develops severe pain in her back.</div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">1.</span> What kidney condition is Kavya likely suffering from? Explain why.</div>
+    <div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div></div>
+  </div>
+  <div class="scenario"><strong>Scenario 2:</strong> Mr. Perera has had diabetes for 15 years and smokes regularly. His doctor is concerned about his kidney function.</div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">2.</span> Which kidney disease is Mr. Perera at risk of? Give two reasons based on his habits.</div>
+    <div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div></div>
+  </div>
+
+  <div class="section-heading"><span class="q-icon">C</span> Part C – Healthy Kidney Tips</div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">3.</span> List FIVE practices that help maintain healthy kidneys:</div>
+    <div class="answer-lines">
+      <div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div>
+      <div class="answer-line"></div><div class="answer-line"></div>
+    </div>
+  </div>
+
+  <div class="section-heading"><span class="q-icon">D</span> Part D – MCQ</div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">4.</span> Which substance forms kidney stones?</div>
+    <div class="mcq-options">
+      <div class="mcq-opt"><span class="mcq-circle"></span> A. Sodium bicarbonate</div>
+      <div class="mcq-opt"><span class="mcq-circle"></span> B. Calcium oxalate</div>
+      <div class="mcq-opt"><span class="mcq-circle"></span> C. Potassium chloride</div>
+      <div class="mcq-opt"><span class="mcq-circle"></span> D. Uric acid crystals only</div>
+    </div>
+  </div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">5.</span> A person who takes medication long-term should do which of the following?</div>
+    <div class="mcq-options">
+      <div class="mcq-opt"><span class="mcq-circle"></span> A. Stop medication immediately</div>
+      <div class="mcq-opt"><span class="mcq-circle"></span> B. Follow prescribed dosage and have kidney tests</div>
+      <div class="mcq-opt"><span class="mcq-circle"></span> C. Drink less water</div>
+      <div class="mcq-opt"><span class="mcq-circle"></span> D. Eat more salty food</div>
+    </div>
+  </div>
+
+  <div class="reflection">💭 Reflection: I understood this topic: ☐ Very well &nbsp; ☐ Somewhat &nbsp; ☐ Need help</div>
+  <div class="ws-footer"><span>Chapter 9 | Worksheet 04 of 16</span><span class="score-box">Score: _______ / 20</span></div>
+</div>
+
+<!-- ===================== WORKSHEET 5 ===================== -->
+<div class="worksheet theme-purple">
+  <div class="ws-header">
+    <div class="ws-header-badge"><span class="ws-num">05</span>Worksheet</div>
+    <div class="ws-header-info">
+      <div class="school">St. Michael's College, Negombo &nbsp;|&nbsp; Grade 8 Science</div>
+      <div class="chapter-title">Chapter 9: Human Organ Systems</div>
+      <div class="ws-topic">Topic: Introduction to the Nervous System &amp; Coordination</div>
+    </div>
+    <div class="ws-header-meta">
+      <div class="meta-row">Name: <span></span></div>
+      <div class="meta-row">Date: <span></span></div>
+      <div class="meta-row">Class: <span></span></div>
+    </div>
+  </div>
+  <div class="objectives"><strong>🎯 Learning Objectives:</strong> Define coordination. Distinguish between nervous and endocrine coordination.</div>
+
+  <div class="section-heading"><span class="q-icon">A</span> Part A – Key Concepts</div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">1.</span> Define <strong>coordination</strong> in the human body.</div>
+    <div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div></div>
+  </div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">2.</span> What are <strong>receptors</strong>? List the five sensory organs that act as receptors.</div>
+    <div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div></div>
+  </div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">3.</span> What are <strong>effectors</strong>? Give two examples.</div>
+    <div class="answer-lines"><div class="answer-line"></div></div>
+  </div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">4.</span> Distinguish between <strong>nervous coordination</strong> and <strong>endocrine coordination</strong>.</div>
+    <div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div></div>
+  </div>
+
+  <div class="section-heading"><span class="q-icon">B</span> Part B – The Cricketer Scenario</div>
+  <div class="scenario">A cricketer sees the ball coming, coordinates his eyes, hands, neck and legs, and hits the ball successfully.</div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">5.</span> In this scenario, identify: (a) the receptor, (b) the effectors, (c) the sense, and (d) the reaction.</div>
+    <div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div></div>
+  </div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">6.</span> Complete the flow chart showing the process of hitting the ball:</div>
+    <div class="flow-row">
+      <div class="flow-blank"></div><div class="flow-arrow">→</div>
+      <div class="flow-blank"></div><div class="flow-arrow">→</div>
+      <div class="flow-box">Hitting the ball</div>
+    </div>
+  </div>
+
+  <div class="section-heading"><span class="q-icon">C</span> Part C – MCQ</div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">7.</span> Which of the following is NOT a receptor?</div>
+    <div class="mcq-options">
+      <div class="mcq-opt"><span class="mcq-circle"></span> A. Eye</div>
+      <div class="mcq-opt"><span class="mcq-circle"></span> B. Nose</div>
+      <div class="mcq-opt"><span class="mcq-circle"></span> C. Muscle</div>
+      <div class="mcq-opt"><span class="mcq-circle"></span> D. Tongue</div>
+    </div>
+  </div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">8.</span> Coordination using hormones is called:</div>
+    <div class="mcq-options">
+      <div class="mcq-opt"><span class="mcq-circle"></span> A. Nervous coordination</div>
+      <div class="mcq-opt"><span class="mcq-circle"></span> B. Endocrine coordination</div>
+      <div class="mcq-opt"><span class="mcq-circle"></span> C. Neural coordination</div>
+      <div class="mcq-opt"><span class="mcq-circle"></span> D. Reflex coordination</div>
+    </div>
+  </div>
+
+  <div class="reflection">💭 Reflection: I understood this topic: ☐ Very well &nbsp; ☐ Somewhat &nbsp; ☐ Need help</div>
+  <div class="ws-footer"><span>Chapter 9 | Worksheet 05 of 16</span><span class="score-box">Score: _______ / 20</span></div>
+</div>
+
+<!-- ===================== WORKSHEET 6 ===================== -->
+<div class="worksheet theme-green">
+  <div class="ws-header">
+    <div class="ws-header-badge"><span class="ws-num">06</span>Worksheet</div>
+    <div class="ws-header-info">
+      <div class="school">St. Michael's College, Negombo &nbsp;|&nbsp; Grade 8 Science</div>
+      <div class="chapter-title">Chapter 9: Human Organ Systems</div>
+      <div class="ws-topic">Topic: Parts of the Human Nervous System</div>
+    </div>
+    <div class="ws-header-meta">
+      <div class="meta-row">Name: <span></span></div>
+      <div class="meta-row">Date: <span></span></div>
+      <div class="meta-row">Class: <span></span></div>
+    </div>
+  </div>
+  <div class="objectives"><strong>🎯 Learning Objectives:</strong> Identify the two main divisions of the nervous system and their subdivisions.</div>
+
+  <div class="section-heading"><span class="q-icon">A</span> Part A – Complete the Classification Chart</div>
+  <div class="info-box">The human nervous system is divided into two main parts. Complete the classification chart below by filling in the blanks.</div>
+  <div style="margin: 8px 0 8px 14px;">
+    <div class="flow-row" style="justify-content:center;">
+      <div class="flow-box" style="min-width:130px;">Human Nervous System</div>
+    </div>
+    <div style="display:flex; gap:30px; justify-content:center; margin-top:6px;">
+      <div>
+        <div class="flow-row"><div class="flow-blank" style="min-width:110px;"></div></div>
+        <div style="display:flex; gap:10px; margin-top:5px;">
+          <div class="flow-blank" style="min-width:70px;"></div>
+          <div class="flow-blank" style="min-width:70px;"></div>
+        </div>
+      </div>
+      <div>
+        <div class="flow-row"><div class="flow-blank" style="min-width:110px;"></div></div>
+        <div style="display:flex; gap:10px; margin-top:5px;">
+          <div class="flow-blank" style="min-width:70px;"></div>
+          <div class="flow-blank" style="min-width:70px;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-heading"><span class="q-icon">B</span> Part B – Short Answer</div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">1.</span> What are the two main organs of the Central Nervous System (CNS)?</div>
+    <div class="answer-lines"><div class="answer-line answer-line-med"></div></div>
+  </div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">2.</span> How is the CNS protected? Name the bones and tissues involved.</div>
+    <div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div></div>
+  </div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">3.</span> What are <strong>meninges</strong>? What fluid fills the meninges?</div>
+    <div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div></div>
+  </div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">4.</span> List three functions of cerebrospinal fluid:</div>
+    <div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div></div>
+  </div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">5.</span> What is the Peripheral Nervous System (PNS)? How does it differ from the CNS?</div>
+    <div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div></div>
+  </div>
+
+  <div class="section-heading"><span class="q-icon">C</span> Part C – True or False</div>
+  <table class="tf-table">
+    <tr><th>Statement</th><th class="tf-check">True</th><th class="tf-check">False</th></tr>
+    <tr><td>The skull protects the brain.</td><td class="tf-check"><span class="tf-box"></span></td><td class="tf-check"><span class="tf-box"></span></td></tr>
+    <tr><td>The spinal cord is part of the PNS.</td><td class="tf-check"><span class="tf-box"></span></td><td class="tf-check"><span class="tf-box"></span></td></tr>
+    <tr><td>Cerebrospinal fluid supplies nutrients to the CNS.</td><td class="tf-check"><span class="tf-box"></span></td><td class="tf-check"><span class="tf-box"></span></td></tr>
+    <tr><td>The meninges are made of hard bone tissue.</td><td class="tf-check"><span class="tf-box"></span></td><td class="tf-check"><span class="tf-box"></span></td></tr>
+  </table>
+
+  <div class="reflection">💭 Reflection: I understood this topic: ☐ Very well &nbsp; ☐ Somewhat &nbsp; ☐ Need help</div>
+  <div class="ws-footer"><span>Chapter 9 | Worksheet 06 of 16</span><span class="score-box">Score: _______ / 20</span></div>
+</div>
+
+<!-- ===================== WORKSHEET 7 ===================== -->
+<div class="worksheet theme-indigo">
+  <div class="ws-header">
+    <div class="ws-header-badge"><span class="ws-num">07</span>Worksheet</div>
+    <div class="ws-header-info">
+      <div class="school">St. Michael's College, Negombo &nbsp;|&nbsp; Grade 8 Science</div>
+      <div class="chapter-title">Chapter 9: Human Organ Systems</div>
+      <div class="ws-topic">Topic: Functions of Brain Parts – Cerebrum, Cerebellum, Medulla</div>
+    </div>
+    <div class="ws-header-meta">
+      <div class="meta-row">Name: <span></span></div>
+      <div class="meta-row">Date: <span></span></div>
+      <div class="meta-row">Class: <span></span></div>
+    </div>
+  </div>
+  <div class="objectives"><strong>🎯 Learning Objectives:</strong> State the specific functions of the cerebrum, cerebellum, medulla, and spinal cord.</div>
+
+  <div class="section-heading"><span class="q-icon">A</span> Part A – Match the Brain Part to its Function</div>
+  <table class="match-table">
+    <tr><td class="col-a">Cerebrum</td><td class="col-arrow">→</td><td class="col-blank"></td><td class="col-b">Regulates and coordinates body balance</td></tr>
+    <tr><td class="col-a">Cerebellum</td><td class="col-arrow">→</td><td class="col-blank"></td><td class="col-b">Controls automatic functions like heartbeat and breathing</td></tr>
+    <tr><td class="col-a">Medulla</td><td class="col-arrow">→</td><td class="col-blank"></td><td class="col-b">Controls thought, intelligence, voluntary actions</td></tr>
+    <tr><td class="col-a">Spinal Cord</td><td class="col-arrow">→</td><td class="col-blank"></td><td class="col-b">Relays messages from brain to body parts</td></tr>
+  </table>
+
+  <div class="section-heading"><span class="q-icon">B</span> Part B – Classify the Activity</div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">1.</span> Write which brain part (Cerebrum / Cerebellum / Medulla / Spinal cord) is mainly involved in each activity:</div>
+    <table class="data-table">
+      <tr><th>Activity</th><th>Brain Part Involved</th></tr>
+      <tr><td>Solving a mathematics problem</td><td class="fill-cell"></td></tr>
+      <tr><td>Breathing while asleep</td><td class="fill-cell"></td></tr>
+      <tr><td>Maintaining balance while cycling</td><td class="fill-cell"></td></tr>
+      <tr><td>Carrying a nerve signal from the brain to the leg</td><td class="fill-cell"></td></tr>
+      <tr><td>Recognising the smell of food</td><td class="fill-cell"></td></tr>
+      <tr><td>Heart beating continuously</td><td class="fill-cell"></td></tr>
+    </table>
+  </div>
+
+  <div class="section-heading"><span class="q-icon">C</span> Part C – Short Answer</div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">2.</span> What is the difference between a <strong>voluntary action</strong> and a <strong>non-voluntary (automatic) action</strong>? Give an example of each.</div>
+    <div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div></div>
+  </div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">3.</span> Why do you think the cerebrum is considered the most important part of the brain?</div>
+    <div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div></div>
+  </div>
+
+  <div class="section-heading"><span class="q-icon">D</span> Part D – Fill in the Blanks</div>
+  <div class="fill-text">
+    The brain consists of three main parts: the <span class="blank"></span>, the <span class="blank"></span>, and the <span class="blank"></span>. The cerebrum controls <span class="blank"></span> actions, while the medulla controls <span class="blank"></span> functions. The cerebellum is responsible for body <span class="blank"></span>. The spinal cord <span class="blank"></span> messages between the brain and the body.
+  </div>
+
+  <div class="reflection">💭 Reflection: I understood this topic: ☐ Very well &nbsp; ☐ Somewhat &nbsp; ☐ Need help</div>
+  <div class="ws-footer"><span>Chapter 9 | Worksheet 07 of 16</span><span class="score-box">Score: _______ / 20</span></div>
+</div>
+
+<!-- ===================== WORKSHEET 8 ===================== -->
+<div class="worksheet theme-brown">
+  <div class="ws-header">
+    <div class="ws-header-badge"><span class="ws-num">08</span>Worksheet</div>
+    <div class="ws-header-info">
+      <div class="school">St. Michael's College, Negombo &nbsp;|&nbsp; Grade 8 Science</div>
+      <div class="chapter-title">Chapter 9: Human Organ Systems</div>
+      <div class="ws-topic">Topic: Peripheral Nervous System &amp; Nerve Impulses</div>
+    </div>
+    <div class="ws-header-meta">
+      <div class="meta-row">Name: <span></span></div>
+      <div class="meta-row">Date: <span></span></div>
+      <div class="meta-row">Class: <span></span></div>
+    </div>
+  </div>
+  <div class="objectives"><strong>🎯 Learning Objectives:</strong> Describe the PNS, cranial and spinal nerves, impulses, and nerve speed.</div>
+
+  <div class="section-heading"><span class="q-icon">A</span> Part A – Fill in the Blanks</div>
+  <div class="word-bank"><strong>📦 Word Bank:</strong>
+    <div class="word-chips">
+      <span class="word-chip">cranial nerves</span><span class="word-chip">spinal nerves</span><span class="word-chip">12</span>
+      <span class="word-chip">31</span><span class="word-chip">impulse</span><span class="word-chip">peripheral</span><span class="word-chip">electrical</span>
+    </div>
+  </div>
+  <div class="fill-text">
+    1. All nerves outside the brain and spinal cord form the <span class="blank"></span> nervous system.<br>
+    2. Nerves leading directly from the brain are called <span class="blank"></span>. There are <span class="blank"></span> pairs.<br>
+    3. Nerves arising from the spinal cord are called <span class="blank"></span>. In humans there are <span class="blank"></span> pairs.<br>
+    4. An <span class="blank"></span> signal travelling along a nerve is called a nerve <span class="blank"></span>.
+  </div>
+
+  <div class="section-heading"><span class="q-icon">B</span> Part B – Functions of the PNS</div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">5.</span> State the TWO main functions of the peripheral nervous system:</div>
+    <div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div></div>
+  </div>
+
+  <div class="section-heading"><span class="q-icon">C</span> Part C – Ruler Drop Activity (Activity 9.3)</div>
+  <div class="scenario"><strong>Activity:</strong> A ruler is dropped and a friend tries to catch it. The reading on the ruler where they catch it indicates how quickly they responded.</div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">6.</span> What does the ruler-drop activity measure?</div>
+    <div class="answer-lines"><div class="answer-line"></div></div>
+  </div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">7.</span> Arrange these events in the correct order (number 1–4):</div>
+    <table class="data-table">
+      <tr><th>Event</th><th>Order (1–4)</th></tr>
+      <tr><td>Right hand muscles contract to catch the ruler (effector responds)</td><td class="fill-cell"></td></tr>
+      <tr><td>Eye sees the ruler falling (receptor)</td><td class="fill-cell"></td></tr>
+      <tr><td>Message sent back from brain to hand muscles</td><td class="fill-cell"></td></tr>
+      <tr><td>Message transmitted to the brain</td><td class="fill-cell"></td></tr>
+    </table>
+  </div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">8.</span> Why do different students get different readings in this activity?</div>
+    <div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div></div>
+  </div>
+
+  <div class="section-heading"><span class="q-icon">D</span> Part D – MCQ</div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">9.</span> How many pairs of spinal nerves are there in humans?</div>
+    <div class="mcq-options">
+      <div class="mcq-opt"><span class="mcq-circle"></span> A. 12</div>
+      <div class="mcq-opt"><span class="mcq-circle"></span> B. 24</div>
+      <div class="mcq-opt"><span class="mcq-circle"></span> C. 31</div>
+      <div class="mcq-opt"><span class="mcq-circle"></span> D. 33</div>
+    </div>
+  </div>
+
+  <div class="reflection">💭 Reflection: I understood this topic: ☐ Very well &nbsp; ☐ Somewhat &nbsp; ☐ Need help</div>
+  <div class="ws-footer"><span>Chapter 9 | Worksheet 08 of 16</span><span class="score-box">Score: _______ / 20</span></div>
+</div>
+
+<!-- ===================== WORKSHEET 9 ===================== -->
+<div class="worksheet theme-blue">
+  <div class="ws-header">
+    <div class="ws-header-badge"><span class="ws-num">09</span>Worksheet</div>
+    <div class="ws-header-info">
+      <div class="school">St. Michael's College, Negombo &nbsp;|&nbsp; Grade 8 Science</div>
+      <div class="chapter-title">Chapter 9: Human Organ Systems</div>
+      <div class="ws-topic">Topic: Protecting the Nervous System</div>
+    </div>
+    <div class="ws-header-meta">
+      <div class="meta-row">Name: <span></span></div>
+      <div class="meta-row">Date: <span></span></div>
+      <div class="meta-row">Class: <span></span></div>
+    </div>
+  </div>
+  <div class="objectives"><strong>🎯 Learning Objectives:</strong> Explain why the nervous system needs protection and list protective measures for daily life.</div>
+
+  <div class="section-heading"><span class="q-icon">A</span> Part A – Short Answer</div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">1.</span> Why is the nervous system described as "very fragile"? Why is it important to protect it?</div>
+    <div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div></div>
+  </div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">2.</span> List FIVE protective measures for the nervous system:</div>
+    <div class="answer-lines">
+      <div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div>
+      <div class="answer-line"></div><div class="answer-line"></div>
+    </div>
+  </div>
+
+  <div class="section-heading"><span class="q-icon">B</span> Part B – Scenario Analysis</div>
+  <div class="scenario"><strong>Scenario:</strong> After a road accident, a bystander wants to help an injured person who may have a spinal injury. The bystander wants to move the person to the side of the road.</div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">3.</span> Should the bystander move the injured person? Give a reason for your answer.</div>
+    <div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div></div>
+  </div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">4.</span> Describe the correct first-aid steps if someone is suspected of having a spinal injury.</div>
+    <div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div></div>
+  </div>
+
+  <div class="section-heading"><span class="q-icon">C</span> Part C – Correct Posture</div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">5.</span> Why is correct posture important for protecting the nervous system? Relate it to the spinal cord.</div>
+    <div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div></div>
+  </div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">6.</span> A student always bends over when lifting heavy bags. Is this the right posture? Explain and describe the correct method.</div>
+    <div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div></div>
+  </div>
+
+  <div class="section-heading"><span class="q-icon">D</span> Part D – True or False</div>
+  <table class="tf-table">
+    <tr><th>Statement</th><th class="tf-check">True</th><th class="tf-check">False</th></tr>
+    <tr><td>Excessive staying awake has no effect on the nervous system.</td><td class="tf-check"><span class="tf-box"></span></td><td class="tf-check"><span class="tf-box"></span></td></tr>
+    <tr><td>Balanced nutrition from childhood helps protect the nervous system.</td><td class="tf-check"><span class="tf-box"></span></td><td class="tf-check"><span class="tf-box"></span></td></tr>
+    <tr><td>A pregnant mother's nutrition affects the baby's mental development.</td><td class="tf-check"><span class="tf-box"></span></td><td class="tf-check"><span class="tf-box"></span></td></tr>
+    <tr><td>Mental stress has no connection with the nervous system.</td><td class="tf-check"><span class="tf-box"></span></td><td class="tf-check"><span class="tf-box"></span></td></tr>
+  </table>
+
+  <div class="reflection">💭 Reflection: I understood this topic: ☐ Very well &nbsp; ☐ Somewhat &nbsp; ☐ Need help</div>
+  <div class="ws-footer"><span>Chapter 9 | Worksheet 09 of 16</span><span class="score-box">Score: _______ / 20</span></div>
+</div>
+
+<!-- ===================== WORKSHEET 10 ===================== -->
+<div class="worksheet theme-teal">
+  <div class="ws-header">
+    <div class="ws-header-badge"><span class="ws-num">10</span>Worksheet</div>
+    <div class="ws-header-info">
+      <div class="school">St. Michael's College, Negombo &nbsp;|&nbsp; Grade 8 Science</div>
+      <div class="chapter-title">Chapter 9: Human Organ Systems</div>
+      <div class="ws-topic">Topic: Structure of Human Skin – Layers &amp; Parts</div>
+    </div>
+    <div class="ws-header-meta">
+      <div class="meta-row">Name: <span></span></div>
+      <div class="meta-row">Date: <span></span></div>
+      <div class="meta-row">Class: <span></span></div>
+    </div>
+  </div>
+  <div class="objectives"><strong>🎯 Learning Objectives:</strong> Describe the two layers of skin and identify the structures found in each layer.</div>
+
+  <div class="section-heading"><span class="q-icon">A</span> Part A – Label the Skin Diagram</div>
+  <div class="diagram-box">
+    <div class="d-instruction">Refer to Figure 9.12 in your textbook. Label parts 1–8 of the skin cross-section diagram.</div>
+    <div style="text-align:center; font-size:11px; color:#aaa; padding: 28px 0; border: 1.5px dashed #ccc; border-radius:6px; margin:4px 0;">[ Cross-section of human skin diagram ]</div>
+    <div class="label-lines">
+      <div class="label-item"><span class="label-num">1.</span><span class="label-blank"></span></div>
+      <div class="label-item"><span class="label-num">2.</span><span class="label-blank"></span></div>
+      <div class="label-item"><span class="label-num">3.</span><span class="label-blank"></span></div>
+      <div class="label-item"><span class="label-num">4.</span><span class="label-blank"></span></div>
+      <div class="label-item"><span class="label-num">5.</span><span class="label-blank"></span></div>
+      <div class="label-item"><span class="label-num">6.</span><span class="label-blank"></span></div>
+      <div class="label-item"><span class="label-num">7.</span><span class="label-blank"></span></div>
+      <div class="label-item"><span class="label-num">8.</span><span class="label-blank"></span></div>
+    </div>
+  </div>
+
+  <div class="section-heading"><span class="q-icon">B</span> Part B – Compare the Layers</div>
+  <table class="data-table">
+    <tr><th>Feature</th><th>Epidermis</th><th>Dermis</th></tr>
+    <tr><td>Position (outer/inner?)</td><td class="fill-cell"></td><td class="fill-cell"></td></tr>
+    <tr><td>Thickness</td><td class="fill-cell"></td><td class="fill-cell"></td></tr>
+    <tr><td>Key structures found</td><td class="fill-cell"></td><td class="fill-cell"></td></tr>
+    <tr><td>Special pigment present?</td><td class="fill-cell"></td><td class="fill-cell"></td></tr>
+  </table>
+
+  <div class="section-heading"><span class="q-icon">C</span> Part C – Short Answer</div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">1.</span> What is melanin? What is its function in the skin?</div>
+    <div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div></div>
+  </div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">2.</span> What is the hypodermis? Where is it located relative to the other layers?</div>
+    <div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div></div>
+  </div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">3.</span> Why is the skin called the "largest organ" of the human body?</div>
+    <div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div></div>
+  </div>
+
+  <div class="reflection">💭 Reflection: I understood this topic: ☐ Very well &nbsp; ☐ Somewhat &nbsp; ☐ Need help</div>
+  <div class="ws-footer"><span>Chapter 9 | Worksheet 10 of 16</span><span class="score-box">Score: _______ / 20</span></div>
+</div>
+
+<!-- ===================== WORKSHEET 11 ===================== -->
+<div class="worksheet theme-orange">
+  <div class="ws-header">
+    <div class="ws-header-badge"><span class="ws-num">11</span>Worksheet</div>
+    <div class="ws-header-info">
+      <div class="school">St. Michael's College, Negombo &nbsp;|&nbsp; Grade 8 Science</div>
+      <div class="chapter-title">Chapter 9: Human Organ Systems</div>
+      <div class="ws-topic">Topic: Functions of Human Skin</div>
+    </div>
+    <div class="ws-header-meta">
+      <div class="meta-row">Name: <span></span></div>
+      <div class="meta-row">Date: <span></span></div>
+      <div class="meta-row">Class: <span></span></div>
+    </div>
+  </div>
+  <div class="objectives"><strong>🎯 Learning Objectives:</strong> Describe the five main functions of the human skin with explanations.</div>
+
+  <div class="section-heading"><span class="q-icon">A</span> Part A – Functions of Skin</div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">1.</span> For each function of the skin below, explain HOW the skin carries out that function:</div>
+    <table class="data-table">
+      <tr><th>Function</th><th>How is it carried out?</th></tr>
+      <tr><td><strong>Protection</strong></td><td class="fill-cell" style="height:40px;"></td></tr>
+      <tr><td><strong>Temperature regulation</strong></td><td class="fill-cell" style="height:40px;"></td></tr>
+      <tr><td><strong>Sensory organ</strong></td><td class="fill-cell" style="height:40px;"></td></tr>
+      <tr><td><strong>Vitamin D synthesis</strong></td><td class="fill-cell" style="height:40px;"></td></tr>
+      <tr><td><strong>Excretion</strong></td><td class="fill-cell" style="height:40px;"></td></tr>
+    </table>
+  </div>
+
+  <div class="section-heading"><span class="q-icon">B</span> Part B – Temperature Regulation</div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">2.</span> Explain how the skin responds when environmental temperature is <strong>higher</strong> than body temperature:</div>
+    <div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div></div>
+  </div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">3.</span> Explain how the skin responds when environmental temperature is <strong>lower</strong> than body temperature:</div>
+    <div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div></div>
+  </div>
+
+  <div class="section-heading"><span class="q-icon">C</span> Part C – MCQ</div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">4.</span> Which gland in the skin secretes a substance that acts as a barrier against microorganisms?</div>
+    <div class="mcq-options">
+      <div class="mcq-opt"><span class="mcq-circle"></span> A. Sweat gland</div>
+      <div class="mcq-opt"><span class="mcq-circle"></span> B. Sebaceous gland</div>
+      <div class="mcq-opt"><span class="mcq-circle"></span> C. Lymph gland</div>
+      <div class="mcq-opt"><span class="mcq-circle"></span> D. Salivary gland</div>
+    </div>
+  </div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">5.</span> Which component of sweat makes the skin an excretory organ?</div>
+    <div class="mcq-options">
+      <div class="mcq-opt"><span class="mcq-circle"></span> A. Water only</div>
+      <div class="mcq-opt"><span class="mcq-circle"></span> B. Urea, uric acid and ammonium salts</div>
+      <div class="mcq-opt"><span class="mcq-circle"></span> C. Vitamins</div>
+      <div class="mcq-opt"><span class="mcq-circle"></span> D. Glucose</div>
+    </div>
+  </div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">6.</span> Why is the skin also considered a sensory organ?</div>
+    <div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div></div>
+  </div>
+
+  <div class="reflection">💭 Reflection: I understood this topic: ☐ Very well &nbsp; ☐ Somewhat &nbsp; ☐ Need help</div>
+  <div class="ws-footer"><span>Chapter 9 | Worksheet 11 of 16</span><span class="score-box">Score: _______ / 20</span></div>
+</div>
+
+<!-- ===================== WORKSHEET 12 ===================== -->
+<div class="worksheet theme-red">
+  <div class="ws-header">
+    <div class="ws-header-badge"><span class="ws-num">12</span>Worksheet</div>
+    <div class="ws-header-info">
+      <div class="school">St. Michael's College, Negombo &nbsp;|&nbsp; Grade 8 Science</div>
+      <div class="chapter-title">Chapter 9: Human Organ Systems</div>
+      <div class="ws-topic">Topic: Skin Care &amp; Skin Diseases</div>
+    </div>
+    <div class="ws-header-meta">
+      <div class="meta-row">Name: <span></span></div>
+      <div class="meta-row">Date: <span></span></div>
+      <div class="meta-row">Class: <span></span></div>
+    </div>
+  </div>
+  <div class="objectives"><strong>🎯 Learning Objectives:</strong> List practices for healthy skin and identify common skin disorders.</div>
+
+  <div class="section-heading"><span class="q-icon">A</span> Part A – Healthy Skin Practices</div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">1.</span> Under each category, write the skin-care advice from the lesson:</div>
+    <table class="data-table">
+      <tr><th>Category</th><th>Advice</th></tr>
+      <tr><td>Diet &amp; Nutrition</td><td class="fill-cell" style="height:38px;"></td></tr>
+      <tr><td>Cleanliness</td><td class="fill-cell" style="height:38px;"></td></tr>
+      <tr><td>Sun Protection</td><td class="fill-cell" style="height:38px;"></td></tr>
+      <tr><td>Avoid Smoking</td><td class="fill-cell" style="height:38px;"></td></tr>
+      <tr><td>Other Factors</td><td class="fill-cell" style="height:38px;"></td></tr>
+    </table>
+  </div>
+
+  <div class="section-heading"><span class="q-icon">B</span> Part B – Skin Disorders</div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">2.</span> Name FOUR skin disorders mentioned in your textbook and state ONE cause for each:</div>
+    <table class="data-table">
+      <tr><th>Skin Disorder</th><th>One Cause</th></tr>
+      <tr><td class="fill-cell"></td><td class="fill-cell"></td></tr>
+      <tr><td class="fill-cell"></td><td class="fill-cell"></td></tr>
+      <tr><td class="fill-cell"></td><td class="fill-cell"></td></tr>
+      <tr><td class="fill-cell"></td><td class="fill-cell"></td></tr>
+    </table>
+  </div>
+
+  <div class="section-heading"><span class="q-icon">C</span> Part C – Smoking and the Skin</div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">3.</span> Describe how smoking affects the skin. Mention blood vessels, oxygen supply, and appearance.</div>
+    <div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div></div>
+  </div>
+
+  <div class="section-heading"><span class="q-icon">D</span> Part D – Short Answer</div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">4.</span> Why should you NOT share your clothing with others? What health risk does this prevent?</div>
+    <div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div></div>
+  </div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">5.</span> Which vitamins are essential for healthy skin and where can you get them?</div>
+    <div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div></div>
+  </div>
+
+  <div class="reflection">💭 Reflection: I understood this topic: ☐ Very well &nbsp; ☐ Somewhat &nbsp; ☐ Need help</div>
+  <div class="ws-footer"><span>Chapter 9 | Worksheet 12 of 16</span><span class="score-box">Score: _______ / 20</span></div>
+</div>
+
+<!-- ===================== WORKSHEET 13 ===================== -->
+<div class="worksheet theme-purple">
+  <div class="ws-header">
+    <div class="ws-header-badge"><span class="ws-num">13</span>Worksheet</div>
+    <div class="ws-header-info">
+      <div class="school">St. Michael's College, Negombo &nbsp;|&nbsp; Grade 8 Science</div>
+      <div class="chapter-title">Chapter 9: Human Organ Systems</div>
+      <div class="ws-topic">Topic: Chapter Review – Excretory &amp; Nervous Systems</div>
+    </div>
+    <div class="ws-header-meta">
+      <div class="meta-row">Name: <span></span></div>
+      <div class="meta-row">Date: <span></span></div>
+      <div class="meta-row">Class: <span></span></div>
+    </div>
+  </div>
+  <div class="objectives"><strong>🎯 Learning Objectives:</strong> Review and consolidate understanding of the excretory and nervous systems.</div>
+
+  <div class="section-heading"><span class="q-icon">A</span> Part A – MCQ (Circle the best answer)</div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">1.</span> Which of the following is NOT an excretory product?</div>
+    <div class="mcq-options">
+      <div class="mcq-opt"><span class="mcq-circle"></span> A. Urea</div><div class="mcq-opt"><span class="mcq-circle"></span> B. Carbon dioxide</div>
+      <div class="mcq-opt"><span class="mcq-circle"></span> C. Faeces</div><div class="mcq-opt"><span class="mcq-circle"></span> D. Uric acid</div>
+    </div>
+  </div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">2.</span> The main nitrogenous excretory organ is the:</div>
+    <div class="mcq-options">
+      <div class="mcq-opt"><span class="mcq-circle"></span> A. Lungs</div><div class="mcq-opt"><span class="mcq-circle"></span> B. Skin</div>
+      <div class="mcq-opt"><span class="mcq-circle"></span> C. Kidneys</div><div class="mcq-opt"><span class="mcq-circle"></span> D. Liver</div>
+    </div>
+  </div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">3.</span> Regulating body balance is the function of the:</div>
+    <div class="mcq-options">
+      <div class="mcq-opt"><span class="mcq-circle"></span> A. Medulla</div><div class="mcq-opt"><span class="mcq-circle"></span> B. Spinal cord</div>
+      <div class="mcq-opt"><span class="mcq-circle"></span> C. Cerebellum</div><div class="mcq-opt"><span class="mcq-circle"></span> D. Cerebrum</div>
+    </div>
+  </div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">4.</span> The main component of urine (by percentage) is:</div>
+    <div class="mcq-options">
+      <div class="mcq-opt"><span class="mcq-circle"></span> A. Urea</div><div class="mcq-opt"><span class="mcq-circle"></span> B. Salts</div>
+      <div class="mcq-opt"><span class="mcq-circle"></span> C. Uric acid</div><div class="mcq-opt"><span class="mcq-circle"></span> D. Water</div>
+    </div>
+  </div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">5.</span> Nerve endings for pressure, touch and temperature are found in the:</div>
+    <div class="mcq-options">
+      <div class="mcq-opt"><span class="mcq-circle"></span> A. Epidermis</div><div class="mcq-opt"><span class="mcq-circle"></span> B. Hypodermis</div>
+      <div class="mcq-opt"><span class="mcq-circle"></span> C. Dermis</div><div class="mcq-opt"><span class="mcq-circle"></span> D. Hair follicle</div>
+    </div>
+  </div>
+
+  <div class="section-heading"><span class="q-icon">B</span> Part B – Match the Terms</div>
+  <table class="match-table">
+    <tr><td class="col-a">Excretion</td><td class="col-arrow">→</td><td class="col-blank"></td><td class="col-b">Fluid that absorbs shocks in the CNS</td></tr>
+    <tr><td class="col-a">Impulse</td><td class="col-arrow">→</td><td class="col-blank"></td><td class="col-b">Removal of excretory products from body</td></tr>
+    <tr><td class="col-a">Coordination</td><td class="col-arrow">→</td><td class="col-blank"></td><td class="col-b">Electrical signal travelling along a nerve</td></tr>
+    <tr><td class="col-a">Cerebrospinal fluid</td><td class="col-arrow">→</td><td class="col-blank"></td><td class="col-b">Interaction between receptors and effectors</td></tr>
+    <tr><td class="col-a">Melanin</td><td class="col-arrow">→</td><td class="col-blank"></td><td class="col-b">Pigment protecting skin from UV rays</td></tr>
+  </table>
+
+  <div class="section-heading"><span class="q-icon">C</span> Part C – Short Answer</div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">6.</span> Name the three main excretory organs and state what each excretes.</div>
+    <div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div></div>
+  </div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">7.</span> State one function each of the cerebrum, cerebellum, and medulla.</div>
+    <div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div></div>
+  </div>
+
+  <div class="reflection">💭 Reflection: I understood this topic: ☐ Very well &nbsp; ☐ Somewhat &nbsp; ☐ Need help</div>
+  <div class="ws-footer"><span>Chapter 9 | Worksheet 13 of 16</span><span class="score-box">Score: _______ / 20</span></div>
+</div>
+
+<!-- ===================== WORKSHEET 14 ===================== -->
+<div class="worksheet theme-green">
+  <div class="ws-header">
+    <div class="ws-header-badge"><span class="ws-num">14</span>Worksheet</div>
+    <div class="ws-header-info">
+      <div class="school">St. Michael's College, Negombo &nbsp;|&nbsp; Grade 8 Science</div>
+      <div class="chapter-title">Chapter 9: Human Organ Systems</div>
+      <div class="ws-topic">Topic: Chapter Review – Skin &amp; Mixed Systems</div>
+    </div>
+    <div class="ws-header-meta">
+      <div class="meta-row">Name: <span></span></div>
+      <div class="meta-row">Date: <span></span></div>
+      <div class="meta-row">Class: <span></span></div>
+    </div>
+  </div>
+  <div class="objectives"><strong>🎯 Learning Objectives:</strong> Review skin structure, functions, and connect all three organ systems.</div>
+
+  <div class="section-heading"><span class="q-icon">A</span> Part A – Fill in the Blanks (Skin Summary)</div>
+  <div class="fill-text">
+    Skin is the <span class="blank"></span> organ in the human body. It weighs about <span class="blank"></span> kg and its thickness is about <span class="blank"></span> mm in an adult. Skin has two main layers: <span class="blank"></span> (outer) and <span class="blank"></span> (inner). The epidermis contains a pigment called <span class="blank"></span> which determines <span class="blank"></span> colour and protects from <span class="blank"></span> rays. The dermis contains <span class="blank"></span> glands, <span class="blank"></span> glands, nerve endings and blood vessels. Beneath the dermis is the <span class="blank"></span>.
+  </div>
+
+  <div class="section-heading"><span class="q-icon">B</span> Part B – Connecting All Three Systems</div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">1.</span> The skin serves as both an excretory organ AND a sensory organ. Explain each role briefly.</div>
+    <div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div></div>
+  </div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">2.</span> How are the nervous system and the skin linked? Explain with reference to the dermis.</div>
+    <div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div></div>
+  </div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">3.</span> Both the kidneys and the skin excrete similar substances. List TWO substances excreted by both and explain why this happens.</div>
+    <div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div></div>
+  </div>
+
+  <div class="section-heading"><span class="q-icon">C</span> Part C – True or False</div>
+  <table class="tf-table">
+    <tr><th>Statement</th><th class="tf-check">True</th><th class="tf-check">False</th></tr>
+    <tr><td>Skin synthesizes vitamin D using sunlight energy.</td><td class="tf-check"><span class="tf-box"></span></td><td class="tf-check"><span class="tf-box"></span></td></tr>
+    <tr><td>The dermis is thinner than the epidermis.</td><td class="tf-check"><span class="tf-box"></span></td><td class="tf-check"><span class="tf-box"></span></td></tr>
+    <tr><td>Sweat contains urea and uric acid.</td><td class="tf-check"><span class="tf-box"></span></td><td class="tf-check"><span class="tf-box"></span></td></tr>
+    <tr><td>Sebaceous gland secretions protect against microorganisms.</td><td class="tf-check"><span class="tf-box"></span></td><td class="tf-check"><span class="tf-box"></span></td></tr>
+    <tr><td>Hair follicles are found in the epidermis.</td><td class="tf-check"><span class="tf-box"></span></td><td class="tf-check"><span class="tf-box"></span></td></tr>
+  </table>
+
+  <div class="section-heading"><span class="q-icon">D</span> Part D – Short Answer</div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">4.</span> Give one reason why cotton clothing is recommended for skin health.</div>
+    <div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div></div>
+  </div>
+
+  <div class="reflection">💭 Reflection: I understood this topic: ☐ Very well &nbsp; ☐ Somewhat &nbsp; ☐ Need help</div>
+  <div class="ws-footer"><span>Chapter 9 | Worksheet 14 of 16</span><span class="score-box">Score: _______ / 20</span></div>
+</div>
+
+<!-- ===================== WORKSHEET 15 ===================== -->
+<div class="worksheet theme-indigo">
+  <div class="ws-header">
+    <div class="ws-header-badge"><span class="ws-num">15</span>Worksheet</div>
+    <div class="ws-header-info">
+      <div class="school">St. Michael's College, Negombo &nbsp;|&nbsp; Grade 8 Science</div>
+      <div class="chapter-title">Chapter 9: Human Organ Systems</div>
+      <div class="ws-topic">Topic: Textbook Exercises – Questions 1 to 4</div>
+    </div>
+    <div class="ws-header-meta">
+      <div class="meta-row">Name: <span></span></div>
+      <div class="meta-row">Date: <span></span></div>
+      <div class="meta-row">Class: <span></span></div>
+    </div>
+  </div>
+  <div class="objectives"><strong>🎯 Learning Objectives:</strong> Answer the textbook exercise questions to consolidate chapter learning.</div>
+
+  <div class="section-heading"><span class="q-icon">A</span> Exercise 1 – Short Answer Questions</div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">i.</span> What do you mean by excretion?</div>
+    <div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div></div>
+  </div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">ii.</span> What are the main excretory organs in the human body?</div>
+    <div class="answer-lines"><div class="answer-line"></div></div>
+  </div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">iii.</span> Why is faeces not considered as an excretory product?</div>
+    <div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div></div>
+  </div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">iv.</span> What is the main component in urine?</div>
+    <div class="answer-lines"><div class="answer-line answer-line-short"></div></div>
+  </div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">v.</span> Write three instances that can damage the kidneys:</div>
+    <div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div></div>
+  </div>
+
+  <div class="section-heading"><span class="q-icon">B</span> Exercise 2 – Underline the Correct Answer</div>
+  <div class="fill-text" style="line-height:2.5;">
+    i. The nerve endings are in (<strong>epidermis</strong> / <strong>dermis</strong>). Correct answer: <span class="blank"></span><br>
+    ii. Inter-connection between receptors and effectors is (<strong>homeostasis</strong> / <strong>coordination</strong>). Answer: <span class="blank"></span><br>
+    iii. CNS is protected by (<strong>meninges layers</strong> / <strong>pleura</strong>). Answer: <span class="blank"></span><br>
+    iv. Cerebrum/cortex (<strong>controls higher brain functions</strong> / <strong>regulates body balance</strong>). Answer: <span class="blank"></span><br>
+    v. Nerves outside the brain and spinal cord are called (<strong>central nerves</strong> / <strong>peripheral nerves</strong>). Answer: <span class="blank"></span>
+  </div>
+
+  <div class="section-heading"><span class="q-icon">C</span> Exercise 3 – Match the Correct Answer</div>
+  <table class="match-table">
+    <tr><td class="col-a">Cerebrum</td><td class="col-arrow">→</td><td class="col-blank"></td><td class="col-b">Controlling the heartbeat</td></tr>
+    <tr><td class="col-a">Cerebellum</td><td class="col-arrow">→</td><td class="col-blank"></td><td class="col-b">Controlling voluntary muscle movements</td></tr>
+    <tr><td class="col-a">Medulla</td><td class="col-arrow">→</td><td class="col-blank"></td><td class="col-b">Transmitting messages between body and brain</td></tr>
+    <tr><td class="col-a">Cerebrospinal fluid</td><td class="col-arrow">→</td><td class="col-blank"></td><td class="col-b">Absorbing shocks</td></tr>
+    <tr><td class="col-a">Spinal cord</td><td class="col-arrow">→</td><td class="col-blank"></td><td class="col-b">Balancing the body</td></tr>
+  </table>
+
+  <div class="reflection">💭 Reflection: I understood this topic: ☐ Very well &nbsp; ☐ Somewhat &nbsp; ☐ Need help</div>
+  <div class="ws-footer"><span>Chapter 9 | Worksheet 15 of 16</span><span class="score-box">Score: _______ / 20</span></div>
+</div>
+
+<!-- ===================== WORKSHEET 16 ===================== -->
+<div class="worksheet theme-brown">
+  <div class="ws-header">
+    <div class="ws-header-badge"><span class="ws-num">16</span>Worksheet</div>
+    <div class="ws-header-info">
+      <div class="school">St. Michael's College, Negombo &nbsp;|&nbsp; Grade 8 Science</div>
+      <div class="chapter-title">Chapter 9: Human Organ Systems</div>
+      <div class="ws-topic">Topic: Textbook Exercises 4–6 &amp; Chapter Consolidation</div>
+    </div>
+    <div class="ws-header-meta">
+      <div class="meta-row">Name: <span></span></div>
+      <div class="meta-row">Date: <span></span></div>
+      <div class="meta-row">Class: <span></span></div>
+    </div>
+  </div>
+  <div class="objectives"><strong>🎯 Learning Objectives:</strong> Complete the final textbook exercises and consolidate the whole chapter.</div>
+
+  <div class="section-heading"><span class="q-icon">A</span> Exercise 4 – Fill in the Blanks</div>
+  <div class="fill-text">
+    Skin is the <span class="blank"></span> organ in the human body. It consists of two layers called <span class="blank"></span> and <span class="blank"></span>. There are <span class="blank"></span> cells in the epidermis. In some epidermal cells there is a special pigment called <span class="blank"></span> that determines the skin colour. It protects the skin from sun's <span class="blank"></span> rays. There are <span class="blank"></span> glands and <span class="blank"></span> glands within the dermis. When there is sunlight, skin synthesizes vitamin <span class="blank"></span>. In the skin there are <span class="blank"></span> that detect pressure, touch and temperature.
+  </div>
+
+  <div class="section-heading"><span class="q-icon">B</span> Exercise 5 – Protective Measures for Healthy Skin</div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">1.</span> Write a list of protective measures that can be taken to maintain a healthy skin:</div>
+    <div class="answer-lines">
+      <div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div>
+      <div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div>
+    </div>
+  </div>
+
+  <div class="section-heading"><span class="q-icon">C</span> Exercise 6 – Name the Parts of the Skin</div>
+  <div class="diagram-box">
+    <div class="d-instruction">Refer to Exercise 6 in your textbook. Name parts 1–4 in the cross section of the skin:</div>
+    <div style="text-align:center; font-size:11px; color:#aaa; padding: 20px 0; border: 1.5px dashed #ccc; border-radius:6px; margin:4px 0;">[ Skin cross-section diagram – Exercise 6 ]</div>
+    <div class="label-lines">
+      <div class="label-item"><span class="label-num">1.</span><span class="label-blank"></span></div>
+      <div class="label-item"><span class="label-num">2.</span><span class="label-blank"></span></div>
+      <div class="label-item"><span class="label-num">3.</span><span class="label-blank"></span></div>
+      <div class="label-item"><span class="label-num">4.</span><span class="label-blank"></span></div>
+    </div>
+  </div>
+
+  <div class="section-heading"><span class="q-icon">D</span> Chapter Summary – What I Learned</div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">2.</span> In your own words, summarise what you learned in Chapter 9 under these three headings:</div>
+    <table class="data-table">
+      <tr><th>Excretory System</th><th>Nervous System</th><th>Skin</th></tr>
+      <tr><td style="height:60px; vertical-align:top;"></td><td style="height:60px; vertical-align:top;"></td><td style="height:60px; vertical-align:top;"></td></tr>
+    </table>
+  </div>
+
+  <div class="section-heading"><span class="q-icon">E</span> Self-Assessment Checklist</div>
+  <table class="tf-table">
+    <tr><th>I can…</th><th class="tf-check">Yes ✓</th><th class="tf-check">Not yet</th></tr>
+    <tr><td>Define excretion and list excretory products.</td><td class="tf-check"><span class="tf-box"></span></td><td class="tf-check"><span class="tf-box"></span></td></tr>
+    <tr><td>Name the parts of the urinary system and their functions.</td><td class="tf-check"><span class="tf-box"></span></td><td class="tf-check"><span class="tf-box"></span></td></tr>
+    <tr><td>Describe the internal structure of a kidney.</td><td class="tf-check"><span class="tf-box"></span></td><td class="tf-check"><span class="tf-box"></span></td></tr>
+    <tr><td>Name the parts of the nervous system and their functions.</td><td class="tf-check"><span class="tf-box"></span></td><td class="tf-check"><span class="tf-box"></span></td></tr>
+    <tr><td>Describe the structure and functions of human skin.</td><td class="tf-check"><span class="tf-box"></span></td><td class="tf-check"><span class="tf-box"></span></td></tr>
+    <tr><td>State protective measures for all three organ systems.</td><td class="tf-check"><span class="tf-box"></span></td><td class="tf-check"><span class="tf-box"></span></td></tr>
+  </table>
+
+  <div class="reflection" style="background:#fff8e1; border-color:#f9a825; color:#555;">🌟 Great work completing all 16 worksheets on Chapter 9! You have studied the excretory system, nervous system, and the skin. Keep revising and stay curious!</div>
+  <div class="ws-footer"><span>Chapter 9 | Worksheet 16 of 16 — End of Chapter</span><span class="score-box">Score: _______ / 20</span></div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,1477 @@
+const lessonNotes = {
+          staticElectricity: [
+            {
+              id: "g7-static-01",
+              title: "Grade 7 · 02. Static Electricity",
+              grade: "Grade 7",
+              lesson: "02. Static Electricity",
+              description:
+                "Lesson reader for charging objects, types of static charges, attraction and repulsion, phenomena and capacitors.",
+              html: `
+          <div class="reader-cover purple"><div class="reader-label">Grade 7 Science · Chapter 02</div><h1>Static Electricity</h1><p>Student-friendly lesson reader.</p></div>
+          <section><h2>2.1 Charging an Object</h2><p>Rubbing objects can create static charges on their surfaces. Charged objects can attract small paper pieces.</p></section>
+          <section><h2>2.2 Types of Static Electrical Charges</h2><ul><li>Positive charge</li><li>Negative charge</li><li>Like charges repel</li><li>Unlike charges attract</li></ul></section>
+          <section><h2>2.3 Generation of Static Electric Charges</h2><p>Electrons move from one object to another during rubbing.</p></section>
+          <section><h2>2.4 Phenomena Associated with Static Electricity</h2><p>Charged objects attract light particles and lightning is a natural example of static electricity.</p></section>
+          <section><h2>2.5 Capacitors</h2><p>A capacitor stores electric charge.</p></section>`,
+            },
+          ],
+          propertiesOfMatter: [
+            {
+              id: "g8-properties-01",
+              title: "Grade 8 · 04. Properties of Matter",
+              grade: "Grade 8",
+              lesson: "04. Properties of Matter",
+              description:
+                "Complete chapter notes: matter and energy, particulate nature of matter, states of matter, pure and non-pure substances, physical properties, density, melting point, boiling point, metals and non-metals, and real-life applications.",
+              html: `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter 4 – Properties of Matter | Grade 8 Notes</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f5f0e8;
+    --card: #ffffff;
+    --ink: #1e1a14;
+    --muted: #6b6256;
+    --accent1: #e85d26;
+    --accent2: #2a7bbf;
+    --accent3: #27a06b;
+    --accent4: #8e44ad;
+    --yellow: #f5c842;
+    --line: #e2d9cc;
+    --solid-bg: #fde8d0;
+    --liquid-bg: #d0e8fd;
+    --gas-bg: #d0fde8;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Nunito', sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.65;
+    padding: 0 0 60px;
+  }
+  header {
+    background: var(--ink);
+    color: #fff;
+    padding: 36px 40px 28px;
+    position: relative;
+    overflow: hidden;
+  }
+  header::before {
+    content: '';
+    position: absolute;
+    top: -40px; right: -40px;
+    width: 220px; height: 220px;
+    border-radius: 50%;
+    background: var(--accent1);
+    opacity: .18;
+  }
+  header::after {
+    content: '';
+    position: absolute;
+    bottom: -60px; left: 30%;
+    width: 160px; height: 160px;
+    border-radius: 50%;
+    background: var(--accent2);
+    opacity: .15;
+  }
+  .chapter-label {
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--yellow);
+    font-weight: 800;
+    margin-bottom: 6px;
+  }
+  header h1 {
+    font-size: 2.4rem;
+    font-weight: 900;
+    line-height: 1.1;
+  }
+  header h1 span { color: var(--accent1); }
+  .grade-badge {
+    display: inline-block;
+    margin-top: 14px;
+    background: var(--yellow);
+    color: var(--ink);
+    font-size: 12px;
+    font-weight: 800;
+    padding: 4px 14px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+  }
+  .container { max-width: 85%; margin: 0 auto; padding: 0 24px; }
+  .section {
+    margin-top: 40px;
+  }
+  .section-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+  .section-title .num {
+    width: 36px; height: 36px;
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 15px; font-weight: 900;
+    flex-shrink: 0;
+  }
+  .section-title h2 {
+    font-size: 1.25rem;
+    font-weight: 900;
+  }
+  .card {
+    background: var(--card);
+    border-radius: 16px;
+    padding: 20px 24px;
+    border: 2px solid var(--line);
+    margin-bottom: 16px;
+  }
+  .card h3 {
+    font-size: 1rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+  }
+  .card p, .card li { font-size: .95rem; color: #333; }
+  .card ul { padding-left: 20px; }
+  .card ul li { margin-bottom: 5px; }
+  .definition {
+    border-left: 5px solid var(--accent1);
+    background: #fff8f3;
+    padding: 14px 18px;
+    border-radius: 0 12px 12px 0;
+    margin-bottom: 16px;
+    font-size: .95rem;
+  }
+  .definition strong { color: var(--accent1); font-size: 1rem; }
+  .states-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 14px;
+    margin-bottom: 16px;
+  }
+  .state-card {
+    border-radius: 14px;
+    padding: 18px 16px;
+    border: 2px solid transparent;
+  }
+  .state-card.solid { background: var(--solid-bg); border-color: #f0a060; }
+  .state-card.liquid { background: var(--liquid-bg); border-color: #60a0f0; }
+  .state-card.gas   { background: var(--gas-bg);   border-color: #60d0a0; }
+  .state-card h4 {
+    font-size: 1.05rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+    display: flex; align-items: center; gap: 6px;
+  }
+  .state-card ul { padding-left: 18px; }
+  .state-card ul li { font-size: .88rem; margin-bottom: 4px; color: #333; }
+  .props-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: .9rem;
+    background: var(--card);
+    border-radius: 14px;
+    overflow: hidden;
+    border: 2px solid var(--line);
+    margin-bottom: 16px;
+  }
+  .props-table th {
+    background: var(--ink);
+    color: #fff;
+    padding: 10px 14px;
+    font-weight: 800;
+    text-align: left;
+  }
+  .props-table td {
+    padding: 9px 14px;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  .props-table tr:last-child td { border-bottom: none; }
+  .props-table tr:nth-child(even) td { background: #fafafa; }
+  .tick { color: var(--accent3); font-weight: 900; }
+  .cross { color: var(--accent1); font-weight: 900; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .pill {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: .8rem;
+    font-weight: 700;
+  }
+  .pill.orange { background: #fde8d0; color: var(--accent1); }
+  .pill.blue   { background: #d0e8fd; color: var(--accent2); }
+  .pill.green  { background: #d0fde8; color: var(--accent3); }
+  .pill.purple { background: #f0d0fd; color: var(--accent4); }
+  .diagram-row {
+    display: flex; gap: 10px; flex-wrap: wrap;
+    margin-bottom: 16px;
+  }
+  .diagram-box {
+    flex: 1; min-width: 160px;
+    border-radius: 12px;
+    border: 2px solid var(--line);
+    background: var(--card);
+    padding: 14px;
+    text-align: center;
+  }
+  .diagram-box .icon { font-size: 2rem; margin-bottom: 6px; }
+  .diagram-box h4 { font-size: .9rem; font-weight: 800; margin-bottom: 4px; }
+  .diagram-box p { font-size: .82rem; color: var(--muted); }
+  .compare-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 16px; }
+  .metal-card { border-radius: 14px; padding: 18px; border: 2px solid; }
+  .metal-card.metal { background: #fff8e6; border-color: var(--yellow); }
+  .metal-card.nonmetal { background: #f5f0ff; border-color: #c3a8f0; }
+  .metal-card h4 { font-size: 1rem; font-weight: 900; margin-bottom: 10px; }
+  .metal-card.metal h4 { color: #b8860b; }
+  .metal-card.nonmetal h4 { color: var(--accent4); }
+  .metal-card ul { padding-left: 18px; }
+  .metal-card ul li { font-size: .88rem; margin-bottom: 5px; }
+  .data-table { width: 100%; border-collapse: collapse; font-size: .88rem; border-radius: 12px; overflow: hidden; border: 2px solid var(--line); }
+  .data-table th { background: var(--accent2); color: #fff; padding: 9px 12px; text-align: left; font-weight: 800; }
+  .data-table td { padding: 8px 12px; border-bottom: 1px solid var(--line); }
+  .data-table tr:last-child td { border-bottom: none; }
+  .data-table tr:nth-child(even) td { background: #f8f8ff; }
+  .memory-box {
+    background: var(--yellow);
+    border-radius: 14px;
+    padding: 18px 22px;
+    margin-bottom: 16px;
+    border: 2px solid #d4a800;
+  }
+  .memory-box h4 { font-weight: 900; font-size: 1rem; margin-bottom: 8px; }
+  .memory-box p, .memory-box li { font-size: .92rem; }
+  .memory-box ul { padding-left: 20px; }
+  .summary-tree {
+    background: var(--card);
+    border: 2px solid var(--line);
+    border-radius: 16px;
+    padding: 24px;
+    text-align: center;
+  }
+  .tree-root {
+    display: inline-block;
+    background: var(--ink);
+    color: #fff;
+    font-weight: 900;
+    font-size: 1.1rem;
+    padding: 10px 28px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+  }
+  .tree-row { display: flex; justify-content: center; gap: 16px; margin-bottom: 12px; }
+  .tree-node {
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-weight: 800;
+    font-size: .9rem;
+  }
+  .tree-node.orange { background: var(--solid-bg); border: 2px solid #f0a060; }
+  .tree-node.blue   { background: var(--liquid-bg); border: 2px solid #60a0f0; }
+  .tree-node.green  { background: var(--gas-bg);   border: 2px solid #60d0a0; }
+  .tree-node.purple { background: #f0d0fd; border: 2px solid #c070f0; }
+  .tree-node.yellow { background: #fff8cc; border: 2px solid var(--yellow); }
+  .tree-connector { border-left: 3px dashed var(--line); height: 20px; width: 0; margin: 0 auto; }
+  .activity {
+    border: 2px dashed var(--accent2);
+    border-radius: 14px;
+    padding: 16px 20px;
+    background: #f0f7ff;
+    margin-bottom: 14px;
+  }
+  .activity h4 { color: var(--accent2); font-weight: 900; font-size: .95rem; margin-bottom: 6px; }
+  .activity p, .activity li { font-size: .9rem; }
+  .activity ul { padding-left: 18px; }
+  @media (max-width: 600px) {
+    .states-grid, .two-col, .compare-grid { grid-template-columns: 1fr; }
+    header h1 { font-size: 1.8rem; }
+  }
+  @media print {
+    body { background: #fff; }
+    header { background: #1e1a14 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <p class="chapter-label">Chapter 4 · Science Notes</p>
+    <h1>Properties of <span>Matter</span></h1>
+    <span class="grade-badge">Grade 8 · Age 13</span>
+  </div>
+</header>
+<div class="container">
+  <div class="section">
+    <div class="section-title">
+      <div class="num" style="background:#fde8d0;color:var(--accent1);">1</div>
+      <h2>What is Matter &amp; Energy?</h2>
+    </div>
+    <div class="two-col">
+      <div class="card" style="border-color:#f0a060;">
+        <h3>⚡ Matter</h3>
+        <p>Anything that <strong>has mass</strong> and <strong>occupies space</strong>.</p>
+        <p style="margin-top:8px;font-size:.88rem;color:var(--muted);">Examples: air, water, ball, bulb, table, chair, magnet</p>
+      </div>
+      <div class="card" style="border-color:#60a0f0;">
+        <h3>💡 Energy</h3>
+        <p><strong>No mass, no space</strong> occupied.</p>
+        <p style="margin-top:8px;font-size:.88rem;color:var(--muted);">Examples: light, sound, heat, electricity</p>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-title">
+      <div class="num" style="background:#d0fde8;color:var(--accent3);">2</div>
+      <h2>Discontinuous (Particulate) Nature of Matter</h2>
+    </div>
+    <div class="definition">
+      <strong>Discontinuous Nature of Matter:</strong><br>
+      Matter is made up of tiny particles with <em>spaces between them</em>. This is called the particulate or discontinuous nature of matter.
+    </div>
+    <div class="memory-box">
+      <h4>📜 Historical Background</h4>
+      <ul>
+        <li><strong>Democritus (460–370 BC)</strong> — said matter is made of very small particles.</li>
+        <li><strong>Aristotle (384–270 BC)</strong> — said matter is NOT made of particles.</li>
+        <li>A public debate in Athens was won by Democritus's idea. Modern scientists later confirmed it with experiments.</li>
+      </ul>
+    </div>
+    <h3 style="font-size:1rem;font-weight:800;margin-bottom:12px;">Evidence in all 3 states of matter:</h3>
+    <div class="activity">
+      <h4>🧱 Solid — Chalk &amp; Ink Experiment</h4>
+      <p>When chalk is placed on coloured ink, the ink rises through the chalk. This proves chalk has tiny particles with spaces between them that allow ink to pass through.</p>
+    </div>
+    <div class="activity">
+      <h4>💧 Liquid — Potassium Permanganate in Water</h4>
+      <p>When potassium permanganate crystals are placed in water, the purple colour slowly spreads. The particles of KMnO₄ move into the spaces between water particles. Same happens with ink drops in water.</p>
+    </div>
+    <div class="activity">
+      <h4>💨 Gas — Nitrogen Dioxide &amp; Perfume Experiment</h4>
+      <p>Brown NO₂ gas placed under a jar of air mixes upward into the air. Scent of a joss stick and perfume spreads across a room. Gas particles move freely through the spaces in air.</p>
+    </div>
+    <div class="memory-box" style="background:#d0fde8;border-color:var(--accent3);">
+      <h4>✅ Conclusion</h4>
+      <p>All matter — solid, liquid, and gas — is made of particles with spaces between them. Therefore, <strong>all matter is discontinuous</strong>.</p>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-title">
+      <div class="num" style="background:#d0e8fd;color:var(--accent2);">3</div>
+      <h2>Particle Arrangement in 3 States</h2>
+    </div>
+    <div class="states-grid">
+      <div class="state-card solid">
+        <h4>🧊 Solid</h4>
+        <ul>
+          <li>Particles orderly arranged</li>
+          <li>Strongly bonded</li>
+          <li>Only vibrate — don't move</li>
+          <li>Very little space between particles</li>
+        </ul>
+      </div>
+      <div class="state-card liquid">
+        <h4>💧 Liquid</h4>
+        <ul>
+          <li>Not orderly arranged</li>
+          <li>Bonding weaker than solid</li>
+          <li>Particles can move within liquid</li>
+          <li>Slightly more space than solid</li>
+        </ul>
+      </div>
+      <div class="state-card gas">
+        <h4>💨 Gas</h4>
+        <ul>
+          <li>Not orderly arranged</li>
+          <li>Very weak bonding</li>
+          <li>Particles move freely &amp; randomly</li>
+          <li>Very large spaces between particles</li>
+        </ul>
+      </div>
+    </div>
+    <table class="props-table">
+      <thead>
+        <tr>
+          <th>Property</th>
+          <th>Solid</th>
+          <th>Liquid</th>
+          <th>Gas</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Shape</strong></td>
+          <td><span class="tick">✔</span> Fixed</td>
+          <td><span class="cross">✘</span> Takes shape of container</td>
+          <td><span class="cross">✘</span> Takes shape of container</td>
+        </tr>
+        <tr>
+          <td><strong>Volume</strong></td>
+          <td><span class="tick">✔</span> Fixed</td>
+          <td><span class="tick">✔</span> Fixed</td>
+          <td><span class="cross">✘</span> Spreads to fill container</td>
+        </tr>
+        <tr>
+          <td><strong>Compressibility</strong></td>
+          <td><span class="cross">✘</span> Hard</td>
+          <td><span class="cross">✘</span> Hard</td>
+          <td><span class="tick">✔</span> Easy</td>
+        </tr>
+        <tr>
+          <td><strong>Density</strong></td>
+          <td>High</td>
+          <td>High</td>
+          <td>Low</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="card">
+      <h3>💡 Why can gases be compressed easily?</h3>
+      <p>Gas particles have <strong>wide spaces</strong> between them. Applying force pushes particles closer. Solid &amp; liquid particles are already closely packed — so they can't be pushed much closer.</p>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-title">
+      <div class="num" style="background:#f0d0fd;color:var(--accent4);">4</div>
+      <h2>Pure Substances &amp; Non-Pure Substances</h2>
+    </div>
+    <div class="two-col">
+      <div class="card" style="border-color:#c070f0;">
+        <h3>🔬 Pure Substance</h3>
+        <p>Contains <strong>only ONE component</strong> with constant, definite properties.</p>
+        <p style="margin-top:8px;font-size:.88rem;color:var(--muted);">Examples: sugar, pure water, copper, iron, aluminium, silver</p>
+      </div>
+      <div class="card" style="border-color:#aaa;">
+        <h3>🧪 Non-Pure Substance (Mixture)</h3>
+        <p>Contains <strong>two or more components</strong>.</p>
+        <p style="margin-top:8px;font-size:.88rem;color:var(--muted);">Examples: air, drinking water, salt solution, tea</p>
+      </div>
+    </div>
+    <p style="font-weight:800;margin-bottom:12px;font-size:1rem;">Pure substances are further divided into:</p>
+    <div class="two-col">
+      <div class="card" style="border-color:var(--yellow);">
+        <h3>⚗️ Elements</h3>
+        <p>Pure substances that <strong>cannot be broken down</strong> into simpler substances by physical or chemical methods.</p>
+        <p style="margin-top:8px;font-size:.88rem;color:var(--muted);">~120 elements known. Each has unique properties.</p>
+        <p style="margin-top:8px;font-size:.88rem;"><strong>Examples:</strong> Iron, Copper, Aluminium, Gold, Silver, Oxygen, Hydrogen, Sulphur, Carbon</p>
+      </div>
+      <div class="card" style="border-color:var(--accent3);">
+        <h3>🔗 Compounds</h3>
+        <p>Formed when <strong>two or more elements</strong> combine chemically in a <strong>fixed ratio</strong>. Properties differ from original elements.</p>
+        <p style="margin-top:8px;font-size:.88rem;color:var(--muted);">Millions of compounds exist!</p>
+        <p style="margin-top:8px;font-size:.88rem;"><strong>Examples:</strong> Water (H+O), Iron sulphide (Fe+S), Carbon dioxide (C+O)</p>
+      </div>
+    </div>
+    <table class="data-table" style="margin-top:10px;">
+      <thead>
+        <tr><th>Compound</th><th>Elements it contains</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Water</td><td>Hydrogen, Oxygen</td></tr>
+        <tr><td>Carbon dioxide</td><td>Carbon, Oxygen</td></tr>
+        <tr><td>Sodium chloride (salt)</td><td>Sodium, Chlorine</td></tr>
+        <tr><td>Copper sulphate</td><td>Copper, Sulphur, Oxygen</td></tr>
+        <tr><td>Calcium carbonate</td><td>Calcium, Carbon, Oxygen</td></tr>
+        <tr><td>Iron sulphide</td><td>Iron, Sulphur</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="section">
+    <div class="section-title">
+      <div class="num" style="background:#d0fde8;color:var(--accent3);">5</div>
+      <h2>Physical Properties of Matter</h2>
+    </div>
+    <table class="data-table">
+      <thead><tr><th>Property</th><th>What it means</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Lustre</strong></td><td>Shiny surface (reflects light)</td></tr>
+        <tr><td><strong>Hardness</strong></td><td>Resists scratching and wear</td></tr>
+        <tr><td><strong>Brittleness</strong></td><td>Breaks or crumbles easily when force is applied</td></tr>
+        <tr><td><strong>Thermal conductivity</strong></td><td>Ability to conduct heat</td></tr>
+        <tr><td><strong>Electrical conductivity</strong></td><td>Ability to conduct electricity</td></tr>
+        <tr><td><strong>Sonority</strong></td><td>Makes a ringing sound when struck</td></tr>
+        <tr><td><strong>Elasticity</strong></td><td>Stretches and returns to original shape</td></tr>
+        <tr><td><strong>Malleability</strong></td><td>Can be hammered into thin sheets</td></tr>
+        <tr><td><strong>Ductility</strong></td><td>Can be drawn into wires</td></tr>
+        <tr><td><strong>Density</strong></td><td>Mass of a unit volume</td></tr>
+        <tr><td><strong>Melting point</strong></td><td>Temperature at which solid → liquid</td></tr>
+        <tr><td><strong>Boiling point</strong></td><td>Temperature at which liquid → gas</td></tr>
+        <tr><td><strong>Expansivity</strong></td><td>Volume increases when heated</td></tr>
+        <tr><td><strong>Texture</strong></td><td>Rough or smooth feel to the touch</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="section">
+    <div class="section-title">
+      <div class="num" style="background:#fde8d0;color:var(--accent1);">6</div>
+      <h2>Density · Melting Point · Boiling Point</h2>
+    </div>
+    <div class="definition" style="border-color:var(--accent1);">
+      <strong>Key Rule:</strong> For pure substances, density, melting point, and boiling point are <em>always constant</em>. This is used to check purity!
+    </div>
+    <div class="card">
+      <h3>📏 Density = Mass ÷ Volume</h3>
+      <p>Each pure substance has a fixed density. Mixed substances (like drinking water vs pure water) have different densities.</p>
+    </div>
+    <div class="two-col" style="margin-bottom:14px;">
+      <table class="data-table">
+        <thead><tr><th>Substance</th><th>Density (kg/m³)</th></tr></thead>
+        <tbody>
+          <tr><td>Gold</td><td>19 300</td></tr>
+          <tr><td>Mercury</td><td>13 600</td></tr>
+          <tr><td>Lead</td><td>11 300</td></tr>
+          <tr><td>Copper</td><td>8 900</td></tr>
+          <tr><td>Iron</td><td>7 700</td></tr>
+          <tr><td>Aluminium</td><td>2 700</td></tr>
+          <tr><td>Water</td><td>1 000</td></tr>
+        </tbody>
+      </table>
+      <div>
+        <table class="data-table" style="margin-bottom:10px;">
+          <thead><tr><th>Substance</th><th>Melting Point (°C)</th></tr></thead>
+          <tbody>
+            <tr><td>Ice (Water)</td><td>0</td></tr>
+            <tr><td>Sulphur</td><td>132</td></tr>
+            <tr><td>Lead</td><td>317</td></tr>
+            <tr><td>Aluminium</td><td>660</td></tr>
+            <tr><td>Copper</td><td>1 083</td></tr>
+            <tr><td>Iron</td><td>1 539</td></tr>
+          </tbody>
+        </table>
+        <table class="data-table">
+          <thead><tr><th>Substance</th><th>Boiling Point (°C)</th></tr></thead>
+          <tbody>
+            <tr><td>Ethyl alcohol</td><td>77</td></tr>
+            <tr><td>Pure water</td><td>100</td></tr>
+            <tr><td>Sulphur</td><td>444</td></tr>
+            <tr><td>Lead</td><td>1 744</td></tr>
+            <tr><td>Iron</td><td>2 900</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="memory-box">
+      <h4>🧊 Ice melts at 0°C · 💧 Water boils at 100°C</h4>
+      <p>These are the melting and boiling points of <strong>pure water</strong> at standard atmospheric pressure. If water has dissolved substances, these values change.</p>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-title">
+      <div class="num" style="background:#fff8cc;color:#b8860b;">7</div>
+      <h2>Metals vs Non-Metals</h2>
+    </div>
+    <div class="compare-grid">
+      <div class="metal-card metal">
+        <h4>🔩 Metals</h4>
+        <ul>
+          <li>✔ Good conductors of heat</li>
+          <li>✔ Good conductors of electricity</li>
+          <li>✔ Lustrous (shiny)</li>
+          <li>✔ Sonorous (ringing sound)</li>
+          <li>✔ Malleable (hammer into sheets)</li>
+          <li>✔ Ductile (draw into wires)</li>
+          <li>✘ Not brittle</li>
+        </ul>
+        <p style="margin-top:10px;font-size:.85rem;color:#666;">Examples: Iron, Copper, Aluminium, Gold, Silver, Lead, Zinc, Magnesium, Mercury</p>
+      </div>
+      <div class="metal-card nonmetal">
+        <h4>🧪 Non-Metals</h4>
+        <ul>
+          <li>✘ Poor conductors of heat</li>
+          <li>✘ Poor conductors of electricity<br><em>(except Carbon/Graphite)</em></li>
+          <li>✘ Not lustrous (dull)</li>
+          <li>✔ Brittle (breaks when struck)</li>
+          <li>✘ Not malleable</li>
+          <li>✘ Not ductile</li>
+        </ul>
+        <p style="margin-top:10px;font-size:.85rem;color:#666;">Examples: Sulphur, Carbon, Oxygen, Hydrogen, Nitrogen, Chlorine, Phosphorus, Iodine, Bromine, Argon</p>
+      </div>
+    </div>
+    <div class="card">
+      <h3>💎 Special cases to remember</h3>
+      <p><strong>Mercury</strong> — a metal that is <em>liquid</em> at room temperature.<br>
+      <strong>Carbon (Graphite)</strong> — a non-metal that <em>conducts electricity</em>.<br>
+      <strong>Bromine</strong> — a non-metal that is <em>liquid</em> at room temperature.</p>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-title">
+      <div class="num" style="background:#d0e8fd;color:var(--accent2);">8</div>
+      <h2>Real-Life Applications of Physical Properties</h2>
+    </div>
+    <table class="data-table">
+      <thead><tr><th>Property</th><th>Application</th><th>Substance Used</th></tr></thead>
+      <tbody>
+        <tr><td>Metallic lustre</td><td>Making jewellery</td><td>Gold, Silver</td></tr>
+        <tr><td>Hardness</td><td>Cutting glass; rail tracks</td><td>Diamond, Steel</td></tr>
+        <tr><td>Compressibility</td><td>Storing gases in cylinders</td><td>Oxygen, LP gas</td></tr>
+        <tr><td>Thermal conductivity</td><td>Cooking pans; soldering</td><td>Aluminium, Lead</td></tr>
+        <tr><td>Electrical conductivity</td><td>Electrical cables</td><td>Copper, Aluminium</td></tr>
+        <tr><td>Elasticity</td><td>Balloons</td><td>Rubber</td></tr>
+        <tr><td>Expansivity</td><td>Thermometers; thermostats</td><td>Mercury, Alcohol</td></tr>
+        <tr><td>Odour</td><td>Detecting gas leaks; perfumes</td><td>LP gas, Scents</td></tr>
+        <tr><td>Brittleness</td><td>Breaking material into pieces</td><td>Granite, egg shells</td></tr>
+        <tr><td>Texture (rough)</td><td>Smoothing wood/walls</td><td>Sandpaper</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="section">
+    <div class="section-title">
+      <div class="num" style="background:#fde8d0;color:var(--accent1);">✦</div>
+      <h2>Chapter Summary – Classification of Matter</h2>
+    </div>
+    <div class="summary-tree">
+      <div><span class="tree-root">⚗️ Matter</span></div>
+      <div class="tree-connector"></div>
+      <div class="tree-row">
+        <span class="tree-node orange">Pure Substances</span>
+        <span class="tree-node blue">Non-Pure Substances (Mixtures)</span>
+      </div>
+      <div style="display:flex;gap:16px;justify-content:center;align-items:flex-start;">
+        <div>
+          <div class="tree-connector"></div>
+          <div class="tree-row">
+            <span class="tree-node yellow">Elements</span>
+            <span class="tree-node green">Compounds</span>
+          </div>
+          <div style="display:flex;gap:14px;justify-content:center;">
+            <div>
+              <div class="tree-connector"></div>
+              <div class="tree-row">
+                <span class="tree-node yellow" style="font-size:.8rem;">Metals</span>
+                <span class="tree-node purple" style="font-size:.8rem;">Non-metals</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-title">
+      <div class="num" style="background:#fde8d0;color:var(--accent1);">✎</div>
+      <h2>Quick Revision Questions</h2>
+    </div>
+    <div class="card">
+      <ol style="padding-left:20px;font-size:.95rem;">
+        <li style="margin-bottom:8px;">What is the difference between matter and energy? Give two examples of each.</li>
+        <li style="margin-bottom:8px;">Explain what is meant by the "discontinuous nature" of matter.</li>
+        <li style="margin-bottom:8px;">Why can gases be compressed but not liquids?</li>
+        <li style="margin-bottom:8px;">What is an element? What is a compound? Give two examples of each.</li>
+        <li style="margin-bottom:8px;">Name THREE physical properties that can be used to test the purity of a substance.</li>
+        <li style="margin-bottom:8px;">The melting point of ice is ____°C and the boiling point of pure water is ____°C.</li>
+        <li style="margin-bottom:8px;">List FOUR properties that are found in metals but NOT in non-metals.</li>
+        <li style="margin-bottom:8px;">Why does mercury damage gold objects when they come into contact?</li>
+      </ol>
+    </div>
+  </div>
+</div>
+</body>
+</html>`,
+            },
+          ],
+          natureAndPropertiesOfMatter: [
+            {
+              id: "g9-matter-01",
+              title: "Grade 9 · 03. Nature and Properties of Matter",
+              grade: "Grade 9",
+              lesson: "03. Nature and Properties of Matter",
+              description:
+                "Complete chapter notes: classification of matter, elements, symbols, atoms, molecules, atomic structure, atomic number, mass number, compounds, mixtures and separation methods.",
+              html: `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter 3 – Nature and Properties of Matter | Grade 9 Science</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0e1117;
+    --surface: #161b27;
+    --surface2: #1e2535;
+    --border: #2a3450;
+    --accent1: #7ec8e3;
+    --accent2: #f4a261;
+    --accent3: #6fcf97;
+    --accent4: #e07b8a;
+    --text: #e8eaf0;
+    --muted: #8a93a8;
+    --heading-font: 'Playfair Display', serif;
+    --body-font: 'DM Sans', sans-serif;
+    --mono-font: 'DM Mono', monospace;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--body-font);
+    font-size: 15px;
+    line-height: 1.75;
+  }
+  .hero {
+    background: linear-gradient(135deg, #0e1117 0%, #162040 50%, #0e1117 100%);
+    border-bottom: 1px solid var(--border);
+    padding: 60px 40px 50px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -80px; right: -80px;
+    width: 320px; height: 320px;
+    background: radial-gradient(circle, rgba(126,200,227,0.12) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: -60px; left: 20%;
+    width: 240px; height: 240px;
+    background: radial-gradient(circle, rgba(244,162,97,0.08) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+  .chapter-label {
+    font-family: var(--mono-font);
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--accent1);
+    margin-bottom: 12px;
+  }
+  .hero h1 {
+    font-family: var(--heading-font);
+    font-size: clamp(28px, 5vw, 52px);
+    font-weight: 900;
+    line-height: 1.15;
+    color: #fff;
+    max-width: 600px;
+    margin-bottom: 16px;
+  }
+  .hero-sub {
+    color: var(--muted);
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+  .grade-badge {
+    display: inline-block;
+    background: var(--accent1);
+    color: var(--bg);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    font-family: var(--mono-font);
+  }
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 48px 28px 80px;
+  }
+  .toc {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--accent1);
+    border-radius: 10px;
+    padding: 28px 32px;
+    margin-bottom: 52px;
+  }
+  .toc-title {
+    font-family: var(--mono-font);
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--accent1);
+    margin-bottom: 16px;
+  }
+  .toc ol {
+    padding-left: 20px;
+  }
+  .toc li {
+    margin-bottom: 6px;
+    color: var(--muted);
+    font-size: 14px;
+  }
+  .toc a {
+    color: var(--text);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .toc a:hover { color: var(--accent1); }
+  .section {
+    margin-bottom: 60px;
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 24px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--border);
+  }
+  .section-num {
+    font-family: var(--mono-font);
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--bg);
+    background: var(--accent2);
+    padding: 4px 10px;
+    border-radius: 6px;
+    letter-spacing: 1px;
+    white-space: nowrap;
+  }
+  .section-num.blue { background: var(--accent1); }
+  .section-num.green { background: var(--accent3); }
+  .section-num.red { background: var(--accent4); }
+  .section h2 {
+    font-family: var(--heading-font);
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+  }
+  .section h3 {
+    font-family: var(--heading-font);
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--accent1);
+    margin: 28px 0 12px;
+  }
+  p { color: var(--text); margin-bottom: 14px; }
+  .def-box {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--accent2);
+    border-radius: 8px;
+    padding: 18px 22px;
+    margin: 16px 0 22px;
+  }
+  .def-box.blue { border-left-color: var(--accent1); }
+  .def-box.green { border-left-color: var(--accent3); }
+  .def-box.pink { border-left-color: var(--accent4); }
+  .def-label {
+    font-family: var(--mono-font);
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accent2);
+    margin-bottom: 6px;
+  }
+  .def-box.blue .def-label { color: var(--accent1); }
+  .def-box.green .def-label { color: var(--accent3); }
+  .def-box.pink .def-label { color: var(--accent4); }
+  .def-box p { margin: 0; color: var(--text); }
+  .tbl-wrap {
+    overflow-x: auto;
+    margin: 20px 0 28px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  thead {
+    background: var(--surface2);
+  }
+  thead th {
+    padding: 12px 18px;
+    text-align: left;
+    font-family: var(--mono-font);
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--accent1);
+    border-bottom: 1px solid var(--border);
+  }
+  tbody tr {
+    border-bottom: 1px solid var(--border);
+    transition: background 0.15s;
+  }
+  tbody tr:last-child { border-bottom: none; }
+  tbody tr:hover { background: var(--surface2); }
+  tbody td {
+    padding: 11px 18px;
+    color: var(--text);
+  }
+  tbody td:first-child { font-weight: 500; }
+  .key-list {
+    list-style: none;
+    padding: 0;
+    margin: 16px 0;
+  }
+  .key-list li {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    color: var(--text);
+    font-size: 14.5px;
+  }
+  .key-list li::before {
+    content: '→';
+    color: var(--accent1);
+    font-family: var(--mono-font);
+    font-size: 13px;
+    margin-top: 2px;
+    flex-shrink: 0;
+  }
+  .atom-diagram {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 24px 0;
+    min-height: 180px;
+  }
+  .atom-svg { max-width: 260px; width: 100%; }
+  .mol-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 14px;
+    margin: 20px 0 28px;
+  }
+  .mol-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px 14px;
+    text-align: center;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+  .mol-card:hover {
+    border-color: var(--accent1);
+    transform: translateY(-2px);
+  }
+  .mol-symbol {
+    font-family: var(--mono-font);
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--accent1);
+    margin-bottom: 4px;
+  }
+  .mol-name {
+    font-size: 12px;
+    color: var(--muted);
+  }
+  .methods-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 14px;
+    margin: 20px 0;
+  }
+  .method-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px;
+    transition: border-color 0.2s;
+  }
+  .method-card:hover { border-color: var(--accent3); }
+  .method-name {
+    font-family: var(--mono-font);
+    font-size: 12px;
+    color: var(--accent3);
+    font-weight: 500;
+    margin-bottom: 5px;
+    letter-spacing: 0.5px;
+  }
+  .method-use {
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+  .summary {
+    background: linear-gradient(135deg, var(--surface) 0%, rgba(126,200,227,0.07) 100%);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 32px 36px;
+    margin-top: 16px;
+  }
+  .summary h2 {
+    font-family: var(--heading-font);
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  .summary .key-list li::before { color: var(--accent3); content: '✓'; }
+  .tip {
+    background: rgba(244,162,97,0.08);
+    border: 1px dashed var(--accent2);
+    border-radius: 8px;
+    padding: 14px 20px;
+    margin: 16px 0;
+    font-size: 13.5px;
+    color: var(--muted);
+  }
+  .tip strong { color: var(--accent2); }
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 24px 40px;
+    text-align: center;
+    font-family: var(--mono-font);
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    color: var(--muted);
+    text-transform: uppercase;
+  }
+  .formula-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 12px;
+    margin: 18px 0 26px;
+  }
+  .formula-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px 16px;
+    transition: border-color 0.2s;
+  }
+  .formula-card:hover { border-color: var(--accent4); }
+  .formula-name { font-size: 13px; color: var(--muted); margin-bottom: 4px; }
+  .formula-sym {
+    font-family: var(--mono-font);
+    font-size: 16px;
+    color: var(--accent4);
+    font-weight: 500;
+    margin-bottom: 4px;
+  }
+  .formula-el { font-size: 11px; color: var(--muted); }
+  .proton-row td { color: #7ec8e3; }
+  .neutron-row td { color: #f4a261; }
+  .electron-row td { color: #6fcf97; }
+  @media (max-width: 600px) {
+    .hero { padding: 40px 20px 36px; }
+    .container { padding: 32px 16px 60px; }
+    .methods-grid, .mol-grid, .formula-grid { grid-template-columns: 1fr 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="hero">
+  <div class="grade-badge">Grade 9 · Science</div>
+  <div class="chapter-label">Chapter 3</div>
+  <h1>Nature and Properties of Matter</h1>
+  <div class="hero-sub">Complete Study Notes · Elements · Compounds · Mixtures · Atomic Structure</div>
+</div>
+<div class="container">
+  <div class="toc">
+    <div class="toc-title">Contents</div>
+    <ol>
+      <li><a href="#classification">Classification of Matter</a></li>
+      <li><a href="#elements">Elements & Their Symbols</a></li>
+      <li><a href="#building-units">Building Units: Atoms & Molecules</a></li>
+      <li><a href="#atomic-structure">Atomic Structure</a></li>
+      <li><a href="#atomic-numbers">Atomic Number & Mass Number</a></li>
+      <li><a href="#compounds">Compounds</a></li>
+      <li><a href="#mixtures">Mixtures</a></li>
+      <li><a href="#separation">Separation Methods</a></li>
+      <li><a href="#summary">Summary</a></li>
+    </ol>
+  </div>
+  <div class="section" id="classification">
+    <div class="section-header">
+      <span class="section-num blue">3.0</span>
+      <h2>Classification of Matter</h2>
+    </div>
+    <p>All matter around us can be split into two broad groups:</p>
+    <div class="def-box blue">
+      <div class="def-label">Pure Substances</div>
+      <p>Matter that contains <strong>only one constituent</strong> with specific properties.<br>
+      <em>Examples: aluminium, silver, copper, distilled water, carbon, sulphur, zinc, copper sulphate, sodium chloride</em></p>
+    </div>
+    <div class="def-box">
+      <div class="def-label">Mixtures (Non-pure Substances)</div>
+      <p>Matter that contains <strong>two or more constituents</strong>.<br>
+      <em>Examples: air, drinking water, salt solution</em></p>
+    </div>
+    <p>Pure substances are further divided:</p>
+    <ul class="key-list">
+      <li>Pure substances that <strong>cannot</strong> be broken down further → <strong>Elements</strong></li>
+      <li>Pure substances formed by the <strong>chemical combination</strong> of two or more elements → <strong>Compounds</strong></li>
+    </ul>
+  </div>
+  <div class="section" id="elements">
+    <div class="section-header">
+      <span class="section-num blue">3.1</span>
+      <h2>Elements</h2>
+    </div>
+    <div class="def-box blue">
+      <div class="def-label">Definition</div>
+      <p>Pure substances with specific properties which <strong>cannot be further divided</strong> by either physical or chemical methods into substances with different properties. There are about <strong>120 elements</strong> discovered so far.</p>
+    </div>
+    <h3>3.1.1 – Symbols for Elements</h3>
+    <p>Internationally accepted symbols are used for all elements. Rules for writing symbols:</p>
+    <ul class="key-list">
+      <li>Usually based on the <strong>English name</strong> — first letter is used as the symbol (must be a <strong>capital</strong> letter).</li>
+      <li>If two elements share the same first letter, a <strong>second (lowercase)</strong> letter is added.</li>
+      <li>Some symbols come from the element's <strong>Latin name</strong>.</li>
+    </ul>
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr><th>Element</th><th>Symbol</th><th>Basis</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Hydrogen</td><td>H</td><td>English</td></tr>
+          <tr><td>Carbon</td><td>C</td><td>English</td></tr>
+          <tr><td>Oxygen</td><td>O</td><td>English</td></tr>
+          <tr><td>Nitrogen</td><td>N</td><td>English</td></tr>
+          <tr><td>Sulphur</td><td>S</td><td>English</td></tr>
+          <tr><td>Chlorine</td><td>Cl</td><td>English (2 letters)</td></tr>
+          <tr><td>Calcium</td><td>Ca</td><td>English (2 letters)</td></tr>
+          <tr><td>Magnesium</td><td>Mg</td><td>English (2 letters)</td></tr>
+          <tr><td>Aluminium</td><td>Al</td><td>English (2 letters)</td></tr>
+          <tr><td>Zinc</td><td>Zn</td><td>English (2 letters)</td></tr>
+          <tr><td>Iodine</td><td>I</td><td>English</td></tr>
+          <tr><td>Silicon</td><td>Si</td><td>English (2 letters)</td></tr>
+          <tr><td>Phosphorous</td><td>P</td><td>English</td></tr>
+          <tr><td>Argon</td><td>Ar</td><td>English (2 letters)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h3>Elements with Latin-based Symbols</h3>
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr><th>English Name</th><th>Latin Name</th><th>Symbol</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Sodium</td><td>Natrium</td><td>Na</td></tr>
+          <tr><td>Copper</td><td>Cuprum</td><td>Cu</td></tr>
+          <tr><td>Lead</td><td>Plumbum</td><td>Pb</td></tr>
+          <tr><td>Gold</td><td>Aurum</td><td>Au</td></tr>
+          <tr><td>Mercury</td><td>Hydrargyrum</td><td>Hg</td></tr>
+          <tr><td>Iron</td><td>Ferrum</td><td>Fe</td></tr>
+          <tr><td>Silver</td><td>Argentum</td><td>Ag</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="tip"><strong>Memory tip:</strong> For Latin symbols, remember: <em>NaCuPb — AuHgFeAg</em> (Sodium-Copper-Lead — Gold-Mercury-Iron-Silver)</div>
+  </div>
+  <div class="section" id="building-units">
+    <div class="section-header">
+      <span class="section-num">3.1.2</span>
+      <h2>Building Units: Atoms & Molecules</h2>
+    </div>
+    <div class="def-box">
+      <div class="def-label">Atom</div>
+      <p>The <strong>smallest, indivisible particle</strong> from which matter is made. The term was first used by <strong>John Dalton (1766–1844)</strong>. The word "atom" comes from the Greek word <em>atomos</em>, meaning "cannot be divided further."</p>
+    </div>
+    <ul class="key-list">
+      <li>An element is composed of <strong>atoms of the same type</strong>.</li>
+      <li>Atoms forming different elements are <strong>different from each other</strong> in structure.</li>
+    </ul>
+    <div class="def-box green">
+      <div class="def-label">Molecule</div>
+      <p>Units formed by the combination of <strong>one or more atoms of the same type</strong>, or <strong>one or more atoms of different types</strong>.</p>
+    </div>
+    <h3>Homo-atomic Molecules</h3>
+    <p>Molecules formed by atoms of the <strong>same element</strong>. These are found in elements.</p>
+    <div class="mol-grid">
+      <div class="mol-card"><div class="mol-symbol">O₂</div><div class="mol-name">Oxygen</div></div>
+      <div class="mol-card"><div class="mol-symbol">N₂</div><div class="mol-name">Nitrogen</div></div>
+      <div class="mol-card"><div class="mol-symbol">Cl₂</div><div class="mol-name">Chlorine</div></div>
+      <div class="mol-card"><div class="mol-symbol">H₂</div><div class="mol-name">Hydrogen</div></div>
+      <div class="mol-card"><div class="mol-symbol">F₂</div><div class="mol-name">Fluorine</div></div>
+    </div>
+    <h3>Hetero-atomic Molecules</h3>
+    <p>Molecules formed by atoms of <strong>different elements</strong>. These are found in compounds.</p>
+    <div class="mol-grid">
+      <div class="mol-card"><div class="mol-symbol">H₂O</div><div class="mol-name">Water</div></div>
+      <div class="mol-card"><div class="mol-symbol">HCl</div><div class="mol-name">Hydrogen Chloride</div></div>
+      <div class="mol-card"><div class="mol-symbol">CO₂</div><div class="mol-name">Carbon Dioxide</div></div>
+      <div class="mol-card"><div class="mol-symbol">CH₄</div><div class="mol-name">Methane</div></div>
+      <div class="mol-card"><div class="mol-symbol">NH₃</div><div class="mol-name">Ammonia</div></div>
+    </div>
+  </div>
+  <div class="section" id="atomic-structure">
+    <div class="section-header">
+      <span class="section-num green">3.1.3</span>
+      <h2>Atomic Structure</h2>
+    </div>
+    <p><strong>Ernest Rutherford (1871–1937)</strong>, a British physicist, first discovered that an atom consists of a large empty space and a positively charged central nucleus.</p>
+    <div class="atom-diagram">
+      <svg class="atom-svg" viewBox="0 0 260 200" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="130" cy="100" rx="115" ry="40" fill="none" stroke="#2a3450" stroke-width="1.5" stroke-dasharray="4 3"/>
+        <ellipse cx="130" cy="100" rx="80" ry="115" fill="none" stroke="#2a3450" stroke-width="1.5" stroke-dasharray="4 3"/>
+        <ellipse cx="130" cy="100" rx="115" ry="70" fill="none" stroke="#2a3450" stroke-width="1.5" stroke-dasharray="4 3" transform="rotate(-40 130 100)"/>
+        <circle cx="130" cy="100" r="18" fill="rgba(244,162,97,0.15)" stroke="#f4a261" stroke-width="2"/>
+        <circle cx="130" cy="100" r="10" fill="#f4a261" opacity="0.7"/>
+        <text x="130" y="104" fill="#fff" font-size="7" text-anchor="middle" font-family="DM Mono, monospace">p⁺+n</text>
+        <circle cx="245" cy="100" r="6" fill="#7ec8e3"/>
+        <circle cx="130" cy="185" r="6" fill="#7ec8e3"/>
+        <circle cx="36" cy="72" r="6" fill="#7ec8e3"/>
+        <text x="200" y="80" fill="#7ec8e3" font-size="9" font-family="DM Mono, monospace">e⁻</text>
+        <text x="140" y="195" fill="#7ec8e3" font-size="9" font-family="DM Mono, monospace">e⁻</text>
+        <text x="18" y="62" fill="#7ec8e3" font-size="9" font-family="DM Mono, monospace">e⁻</text>
+        <text x="110" y="85" fill="#f4a261" font-size="8" font-family="DM Mono, monospace">Nucleus</text>
+      </svg>
+    </div>
+    <div class="def-box">
+      <div class="def-label">Nucleus</div>
+      <p>The <strong>positively charged central core</strong> of the atom where almost all the mass is concentrated. Contains <strong>protons</strong> and <strong>neutrons</strong>.</p>
+    </div>
+    <h3>Subatomic Particles</h3>
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr><th>Particle</th><th>Location</th><th>Relative Mass</th><th>Relative Charge</th></tr>
+        </thead>
+        <tbody>
+          <tr class="proton-row">
+            <td>Proton</td><td>In the nucleus</td><td>1</td><td>+1</td>
+          </tr>
+          <tr class="neutron-row">
+            <td>Neutron</td><td>In the nucleus</td><td>1</td><td>0</td>
+          </tr>
+          <tr class="electron-row">
+            <td>Electron</td><td>Around the nucleus</td><td>1/1840</td><td>−1</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="tip"><strong>Key fact:</strong> Electrons are about <strong>1840 times lighter</strong> than protons and neutrons. A greater part of an atom is <strong>empty space</strong>.</div>
+  </div>
+  <div class="section" id="atomic-numbers">
+    <div class="section-header">
+      <span class="section-num green">3.1.4</span>
+      <h2>Atomic Number & Mass Number</h2>
+    </div>
+    <div class="def-box green">
+      <div class="def-label">Atomic Number (Z)</div>
+      <p>The <strong>number of protons</strong> in the nucleus of an atom. It is a <strong>unique property</strong> of an element. Since the atom is electrically neutral, <strong>number of protons = number of electrons</strong>.</p>
+    </div>
+    <div class="def-box blue">
+      <div class="def-label">Mass Number (A)</div>
+      <p>The <strong>sum of protons and neutrons</strong> in the nucleus.<br>
+      <strong>A = number of protons + number of neutrons</strong></p>
+    </div>
+    <h3>Standard Notation</h3>
+    <p>The atomic number is written at the <strong>bottom-left</strong> and mass number at the <strong>top-left</strong> of the element symbol:</p>
+    <div style="text-align:center; margin: 22px 0;">
+      <span style="font-family: var(--mono-font); font-size: 36px; color: var(--accent1);">
+        <sup style="font-size:18px; color: var(--accent2);">23</sup>
+        <sub style="font-size:18px; color: var(--accent3);">11</sub>Na
+      </span>
+      <div style="font-size:12px; color: var(--muted); margin-top:8px;">
+        <span style="color:var(--accent2);">23 = Mass Number (p+n)</span> &nbsp;|&nbsp;
+        <span style="color:var(--accent3);">11 = Atomic Number (protons)</span>
+      </div>
+    </div>
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr><th>Element</th><th>Protons (p)</th><th>Neutrons (n)</th><th>Atomic No. (Z)</th><th>Mass No. (A)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Carbon (C)</td><td>6</td><td>6</td><td>6</td><td>12</td></tr>
+          <tr><td>Nitrogen (N)</td><td>7</td><td>7</td><td>7</td><td>14</td></tr>
+          <tr><td>Oxygen (O)</td><td>8</td><td>8</td><td>8</td><td>16</td></tr>
+          <tr><td>Fluorine (F)</td><td>9</td><td>10</td><td>9</td><td>19</td></tr>
+          <tr><td>Sodium (Na)</td><td>11</td><td>12</td><td>11</td><td>23</td></tr>
+          <tr><td>Chlorine (Cl)</td><td>17</td><td>18</td><td>17</td><td>35</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="section" id="compounds">
+    <div class="section-header">
+      <span class="section-num red">3.2</span>
+      <h2>Compounds</h2>
+    </div>
+    <div class="def-box pink">
+      <div class="def-label">Definition</div>
+      <p>Pure substances with specific properties formed by the <strong>chemical combination of two or more elements in a fixed ratio</strong>. Compounds have <strong>hetero-atomic molecules</strong> — containing atoms of different elements.</p>
+    </div>
+    <ul class="key-list">
+      <li>An <strong>element</strong> is composed of atoms of the <strong>same kind</strong>.</li>
+      <li>A <strong>compound</strong> is formed from atoms of <strong>two or more different elements</strong>.</li>
+      <li>The elements in a compound <strong>cannot show the properties</strong> of that compound individually.</li>
+      <li>Different compounds from the same elements have <strong>different chemical properties</strong>.</li>
+    </ul>
+    <h3>Common Compounds & Formulas</h3>
+    <div class="formula-grid">
+      <div class="formula-card">
+        <div class="formula-name">Water</div>
+        <div class="formula-sym">H₂O</div>
+        <div class="formula-el">H and O</div>
+      </div>
+      <div class="formula-card">
+        <div class="formula-name">Glucose</div>
+        <div class="formula-sym">C₆H₁₂O₆</div>
+        <div class="formula-el">C, H and O</div>
+      </div>
+      <div class="formula-card">
+        <div class="formula-name">Methane</div>
+        <div class="formula-sym">CH₄</div>
+        <div class="formula-el">C and H</div>
+      </div>
+      <div class="formula-card">
+        <div class="formula-name">Carbon Dioxide</div>
+        <div class="formula-sym">CO₂</div>
+        <div class="formula-el">C and O</div>
+      </div>
+      <div class="formula-card">
+        <div class="formula-name">Sodium Chloride</div>
+        <div class="formula-sym">NaCl</div>
+        <div class="formula-el">Na and Cl</div>
+      </div>
+      <div class="formula-card">
+        <div class="formula-name">Copper Sulphate</div>
+        <div class="formula-sym">CuSO₄</div>
+        <div class="formula-el">Cu, S and O</div>
+      </div>
+      <div class="formula-card">
+        <div class="formula-name">Calcium Carbonate</div>
+        <div class="formula-sym">CaCO₃</div>
+        <div class="formula-el">Ca, C and O</div>
+      </div>
+      <div class="formula-card">
+        <div class="formula-name">Ammonia</div>
+        <div class="formula-sym">NH₃</div>
+        <div class="formula-el">N and H</div>
+      </div>
+    </div>
+    <div class="tip"><strong>Interesting fact:</strong> The same set of elements (C, H, O) can form totally different compounds — glucose (sugar), acetic acid (vinegar), ethanol (alcohol), and sucrose (cane sugar)!</div>
+  </div>
+  <div class="section" id="mixtures">
+    <div class="section-header">
+      <span class="section-num">3.3</span>
+      <h2>Mixtures</h2>
+    </div>
+    <div class="def-box">
+      <div class="def-label">Definition</div>
+      <p>Matter consisting of <strong>two or more pure substances (constituents)</strong> that can be separated by <strong>physical methods</strong>. Most substances found in nature are mixtures — air, soil, river water, sea water, rocks.</p>
+    </div>
+    <h3>Types of Mixtures</h3>
+    <div class="def-box green">
+      <div class="def-label">Homogeneous Mixtures</div>
+      <p>Mixtures with <strong>uniform composition</strong> throughout. Properties like colour and transparency are the same in every part.<br>
+      <em>Examples: salt solution, sugar solution, sea water</em></p>
+    </div>
+    <div class="def-box">
+      <div class="def-label">Heterogeneous Mixtures</div>
+      <p>Mixtures where the <strong>composition is NOT uniform</strong> — it varies from place to place.<br>
+      <em>Examples: muddy water, mortar mixture, ice cream, fruit salad</em></p>
+    </div>
+    <h3>Common Mixtures & Their Constituents</h3>
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr><th>Mixture</th><th>Constituents</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Air</td><td>Nitrogen, oxygen, argon, carbon dioxide, water vapour</td></tr>
+          <tr><td>Sea water</td><td>Water, salts, dissolved oxygen, dissolved carbon dioxide</td></tr>
+          <tr><td>Cake mixture</td><td>Sugar, flour, water, colouring, butter, eggs</td></tr>
+          <tr><td>Crude oil</td><td>Diesel, petrol, kerosene, tar</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="section" id="separation">
+    <div class="section-header">
+      <span class="section-num green">3.4</span>
+      <h2>Physical Methods of Separating Mixtures</h2>
+    </div>
+    <p>The key feature of mixtures is that constituents can be separated by <strong>physical methods</strong> (no chemical reaction needed):</p>
+    <div class="methods-grid">
+      <div class="method-card">
+        <div class="method-name">Panning</div>
+        <div class="method-use">Separating sand from rice; separating gems from ores</div>
+      </div>
+      <div class="method-card">
+        <div class="method-name">Winnowing</div>
+        <div class="method-use">Separating chaff from rice</div>
+      </div>
+      <div class="method-card">
+        <div class="method-name">Floating on Water</div>
+        <div class="method-use">Separating sterile seeds from seed paddy</div>
+      </div>
+      <div class="method-card">
+        <div class="method-name">Sifting</div>
+        <div class="method-use">Separating gravel from sand</div>
+      </div>
+      <div class="method-card">
+        <div class="method-name">Vapourisation</div>
+        <div class="method-use">Obtaining salt from sea water</div>
+      </div>
+      <div class="method-card">
+        <div class="method-name">Fractional Distillation</div>
+        <div class="method-use">Separating various fuels from crude oil</div>
+      </div>
+      <div class="method-card">
+        <div class="method-name">Steam Distillation</div>
+        <div class="method-use">Separating cinnamon oil from cinnamon leaves</div>
+      </div>
+      <div class="method-card">
+        <div class="method-name">Crystallization</div>
+        <div class="method-use">Separating sugar from cane sugar syrup</div>
+      </div>
+      <div class="method-card">
+        <div class="method-name">Using Magnets</div>
+        <div class="method-use">Separating some minerals from mineral sands</div>
+      </div>
+    </div>
+  </div>
+  <div class="section" id="summary">
+    <div class="summary">
+      <h2>📋 Chapter Summary</h2>
+      <ul class="key-list">
+        <li>Matter is classified as <strong>pure substances</strong> and <strong>mixtures</strong>.</li>
+        <li>Pure substances are further classified as <strong>elements</strong> and <strong>compounds</strong>.</li>
+        <li>Elements cannot be divided into different substances by physical or chemical methods.</li>
+        <li>Compounds are formed by chemical combination of two or more elements in a definite ratio.</li>
+        <li>Building units of elements are <strong>atoms</strong> and <strong>molecules</strong>.</li>
+        <li><strong>Homo-atomic</strong> molecules → same type of atoms; <strong>Hetero-atomic</strong> molecules → different types of atoms.</li>
+        <li>An atom has a <strong>nucleus</strong> (protons + neutrons) with electrons moving around it.</li>
+        <li><strong>Atomic number (Z)</strong> = number of protons (unique to each element).</li>
+        <li><strong>Mass number (A)</strong> = number of protons + number of neutrons.</li>
+        <li>Mixtures consist of two or more constituents separable by <strong>physical methods</strong>.</li>
+        <li>Mixtures are either <strong>homogeneous</strong> (uniform) or <strong>heterogeneous</strong> (non-uniform).</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<footer>Grade 9 Science · Chapter 3 · Nature and Properties of Matter · Study Notes</footer>
+</body>
+</html>`,
+            },
+          ],
+          structureOfMatter: [
+            {
+              id: "g10-structure-01",
+              title: "Grade 10 · 03. Structure of Matter",
+              grade: "Grade 10",
+              lesson: "03. Structure of Matter",
+              description:
+                "Lesson reader for atoms, atomic number, mass number, electronic configuration, periodic table, isotopes, metals and non-metals, and formulae.",
+              html: `
+          <div class="reader-cover blue"><div class="reader-label">Grade 10 Science · Chapter 03</div><h1>Structure of Matter</h1><p>Lesson reader for atomic structure and related concepts.</p></div>
+          <section><h2>3.1 The Planetary Model of the Atom</h2><div class="reader-grid three"><div class="reader-card"><h3>Proton</h3><p>Positive particle in the nucleus.</p></div><div class="reader-card"><h3>Neutron</h3><p>Neutral particle in the nucleus.</p></div><div class="reader-card"><h3>Electron</h3><p>Negative particle in shells around the nucleus.</p></div></div></section>
+          <section><h2>Atomic Number and Mass Number</h2><ul><li>Atomic number = protons.</li><li>Mass number = protons + neutrons.</li><li>Neutrons = mass number − atomic number.</li></ul></section>
+          <section><h2>3.2 Electronic Configuration</h2><p>Electronic configuration is the arrangement of electrons in shells.</p></section>
+          <section><h2>3.3 Periodic Table</h2><p>Elements are arranged according to atomic number.</p></section>
+          <section><h2>3.4 Isotopes</h2><p>Isotopes have the same atomic number but different mass numbers.</p></section>
+          <section><h2>3.5 Metals and Non-metals</h2><p>Metals and non-metals show different physical and chemical properties.</p></section>
+          <section><h2>3.6 Chemical Formulae</h2><p>Formulae show the types and numbers of atoms in substances.</p></section>`,
+            },
+          ],
+        };
+
+        

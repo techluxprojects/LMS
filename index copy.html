@@ -37,20 +37,6 @@
         --bg-control: #ffffff;
         --select-bg: #f8fafc;
         --select-bg-light: #f1f5f9;
-        --control-panel-top: rgba(255, 255, 255, 0.96);
-        --control-panel-bottom: rgba(248, 250, 252, 0.92);
-        --control-panel-border: rgba(255, 255, 255, 0.75);
-        --control-panel-shadow: 0 18px 45px rgba(15, 23, 42, 0.1);
-        --control-panel-inset: inset 0 1px 0 rgba(255, 255, 255, 0.7);
-        --select-surface: #ffffff;
-        --select-surface-2: #f8fbff;
-        --select-menu-bg: #ffffff;
-        --select-menu-text: #0f172a;
-        --select-border: rgba(148, 163, 184, 0.35);
-        --select-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
-        --select-shadow-hover: 0 14px 30px rgba(59, 130, 246, 0.12);
-        --select-inset: inset 0 1px 0 rgba(255, 255, 255, 0.9);
-        --select-arrow: #3b82f6;
         --grade-primary: #3b82f6;
         --grade-primary-light: #dbeafe;
         --grade-text-color: #0c2340;
@@ -65,20 +51,6 @@
         --bg-control: #1e293b;
         --select-bg: #0f172a;
         --select-bg-light: #1e293b;
-        --control-panel-top: rgba(30, 41, 59, 0.92);
-        --control-panel-bottom: rgba(15, 23, 42, 0.9);
-        --control-panel-border: rgba(148, 163, 184, 0.18);
-        --control-panel-shadow: 0 22px 48px rgba(2, 6, 23, 0.35);
-        --control-panel-inset: inset 0 1px 0 rgba(255, 255, 255, 0.04);
-        --select-surface: #0f172a;
-        --select-surface-2: #1e293b;
-        --select-menu-bg: #0f172a;
-        --select-menu-text: #f8fafc;
-        --select-border: rgba(96, 165, 250, 0.28);
-        --select-shadow: 0 10px 28px rgba(2, 6, 23, 0.28);
-        --select-shadow-hover: 0 16px 34px rgba(37, 99, 235, 0.22);
-        --select-inset: inset 0 1px 0 rgba(255, 255, 255, 0.04);
-        --select-arrow: #93c5fd;
       }
       .grade-7 {
         --grade-primary: #8b5cf6;
@@ -175,18 +147,11 @@
         font-size: 1.4rem;
       }
       .control-panel {
-        background: linear-gradient(
-          135deg,
-          var(--control-panel-top) 0%,
-          var(--control-panel-bottom) 100%
-        );
-        backdrop-filter: blur(16px);
+        background: var(--bg-control);
         border-radius: 28px;
         padding: 28px 32px;
-        box-shadow:
-          var(--control-panel-shadow),
-          var(--control-panel-inset);
-        border: 1px solid var(--control-panel-border);
+        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+        border: 1px solid var(--border);
         margin-bottom: 32px;
         display: flex;
         flex-wrap: wrap;
@@ -197,80 +162,35 @@
         display: flex;
         flex-direction: column;
         min-width: 200px;
-        gap: 10px;
       }
       .selector-group label {
         font-size: 0.75rem;
         font-weight: 700;
         text-transform: uppercase;
-        letter-spacing: 0.08em;
+        letter-spacing: 0.5px;
         color: var(--text-secondary);
+        margin-bottom: 10px;
         display: flex;
         align-items: center;
         gap: 6px;
       }
       .selector-group select {
-        padding: 15px 50px 15px 18px;
+        padding: 14px 18px;
         font-size: 1rem;
-        font-weight: 600;
-        line-height: 1.35;
-        background-color: var(--select-surface);
-        background-image:
-          linear-gradient(
-            135deg,
-            var(--select-surface) 0%,
-            var(--select-surface-2) 100%
-          ),
-          url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M5 7.5L10 12.5L15 7.5' stroke='%233b82f6' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-        background-repeat: no-repeat, no-repeat;
-        background-position:
-          center,
-          right 16px center;
-        background-size:
-          auto,
-          18px 18px;
-        border: 1.5px solid var(--select-border);
-        border-radius: 16px;
-        color: var(--select-menu-text);
+        font-weight: 500;
+        background: linear-gradient(
+          135deg,
+          var(--select-bg) 0%,
+          var(--select-bg-light) 100%
+        );
+        border: 2px solid var(--border);
+        border-radius: 14px;
+        color: var(--text-main);
         cursor: pointer;
-        appearance: auto;
-        color-scheme: normal;
-        box-shadow:
-          var(--select-shadow),
-          var(--select-inset);
-        transition:
-          border-color 0.22s ease,
-          box-shadow 0.22s ease,
-          transform 0.22s ease;
-      }
-      .selector-group select,
-      .selector-group select option,
-      .selector-group select optgroup {
-        background: var(--select-menu-bg);
-        color: var(--select-menu-text);
-      }
-      html.dark-mode .selector-group select {
-        background-image:
-          linear-gradient(
-            135deg,
-            var(--select-surface) 0%,
-            var(--select-surface-2) 100%
-          ),
-          url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M5 7.5L10 12.5L15 7.5' stroke='%2393c5fd' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-      }
-      .selector-group select:hover {
-        border-color: rgba(59, 130, 246, 0.45);
-        box-shadow:
-          var(--select-shadow-hover),
-          var(--select-inset);
-        transform: translateY(-1px);
       }
       .selector-group select:focus {
         outline: none;
         border-color: var(--primary);
-        box-shadow:
-          0 0 0 4px rgba(59, 130, 246, 0.18),
-          0 16px 32px rgba(59, 130, 246, 0.18);
       }
       .topic-badge,
       .video-count,
@@ -594,7 +514,7 @@
             >
           </h1>
           <div class="sub">
-            Select grade → lesson → topic · Videos and lesson resources are
+            Select grade → lesson → topic · Videos and lesson notes are
             separated clearly · Click Read Note to open the chapter in a clean
             reader
           </div>
@@ -629,7 +549,7 @@
           >
           <span class="note-chip"
             ><i class="fas fa-book"></i
-            ><span id="noteCountBadge">0</span> resources</span
+            ><span id="noteCountBadge">0</span> notes</span
           >
         </div>
       </div>
@@ -650,10 +570,8 @@
 
       <section class="notes-section">
         <div class="section-title">
-          <h2 id="currentNotesTitle">Lesson Resources</h2>
-          <div class="video-count" id="noteAvailabilityDisplay">
-            📚 0 resources
-          </div>
+          <h2 id="currentNotesTitle">Lesson Notes</h2>
+          <div class="video-count" id="noteAvailabilityDisplay">📚 0 notes</div>
         </div>
         <div id="notesGridContainer" class="notes-grid"></div>
         <div id="notesEmptyMessage" class="empty-state" style="display: none">
@@ -661,14 +579,14 @@
             class="fas fa-book-open"
             style="font-size: 48px; opacity: 0.5; margin-bottom: 16px"
           ></i>
-          <h3>No resource available yet</h3>
-          <p>This lesson does not have an attached resource yet.</p>
+          <h3>No note available yet</h3>
+          <p>This lesson does not have an attached reader note yet.</p>
         </div>
       </section>
 
       <div class="footer-note">
-        Videos remain available where already added, and folder documents are
-        now attached as extra resources.
+        Grade 8 now uses 04. Properties of Matter and Grade 9 now uses 03.
+        Nature and Properties of Matter as the current chapter notes.
       </div>
     </div>
 
@@ -693,14 +611,12 @@
 
     <div id="noteModal" class="note-modal">
       <button class="close-note-modal" id="closeNoteModalBtn">
-        <i class="fas fa-times"></i> Close resource
+        <i class="fas fa-times"></i> Close note
       </button>
       <div class="note-modal-content">
         <div class="note-modal-toolbar">
           <div>
-            <div class="note-modal-title" id="noteModalTitle">
-              Lesson Resource
-            </div>
+            <div class="note-modal-title" id="noteModalTitle">Lesson Note</div>
             <div class="lesson-note-strip">
               <span class="badge" id="noteModalGrade">Grade</span>
               <span class="badge" id="noteModalLesson">Lesson</span>
@@ -713,7 +629,7 @@
         <iframe
           id="noteReaderFrame"
           class="note-frame"
-          title="Lesson Resource Reader"
+          title="Lesson Note Reader"
         ></iframe>
       </div>
     </div>
@@ -770,22 +686,6 @@
                   "2.5 Capacitors": [],
                 },
               },
-              animalDiversity: {
-                name: "06. Animal Diversity",
-                topics: {
-                  "6.1 Vertebrates and invertebrates": [],
-                  "6.2 Adaptations of organisms to environment": [],
-                  "6.3 Use of dichotomous key for classification of organisms":
-                    [],
-                },
-              },
-              natureOfTheEarth: {
-                name: "08. The Nature of the Earth",
-                topics: {
-                  "8.1 The structure of the earth": [],
-                  "8.2 Tectonic plate and plate tectonics": [],
-                },
-              },
             },
           },
           8: {
@@ -802,14 +702,6 @@
                   "4.6 Density, melting point and boiling point": [],
                   "4.7 Metals and non-metals": [],
                   "4.8 Real-life applications": [],
-                },
-              },
-              humanOrganSystems: {
-                name: "09. Human organ systems",
-                topics: {
-                  "9.1 Human excretory system and excretory products": [],
-                  "9.2 Nervous system": [],
-                  "9.3 Human skin": [],
                 },
               },
             },
@@ -829,23 +721,6 @@
                   "3.2 Compounds": [],
                   "3.3 Mixtures": [],
                   "3.4 Separation methods": [],
-                },
-              },
-              humanCirculatorySystem: {
-                name: "06. The Human Circulatory System",
-                topics: {
-                  "6.1 Structure of the human heart": [],
-                  "6.2 Arteries, veins and capillaries": [],
-                  "6.3 Components of blood and their functions": [],
-                  "6.4 Blood transfusion": [],
-                },
-              },
-              plantGrowthSubstances: {
-                name: "07. Plant Growth Substances",
-                topics: {
-                  "7.1 Introduction to plant growth substances": [],
-                  "7.2 Auxins": [],
-                  "7.3 Gibberellins and cytokinins": [],
                 },
               },
             },
@@ -933,23 +808,6 @@
                       url: "https://youtu.be/0ewWkfBA3vw?si=uMcIpjGiGT-bsqPS",
                     },
                   ],
-                },
-              },
-              biosphere: {
-                name: "13. Biosphere",
-                topics: {
-                  "13.1 Introduction to classification": [],
-                  "13.2 Three domain system": [],
-                  "13.3 Protista and fungi": [],
-                  "13.4 Non-flowering plants": [],
-                  "13.5 Flowering plants and animalia": [],
-                  "13.6 Cnidaria, annelida and mollusca": [],
-                  "13.7 Arthropoda and echinodermata": [],
-                  "13.8 Pisces and amphibia": [],
-                  "13.9 Reptilia, aves and mammalia": [],
-                  "13.10 Binomial nomenclature": [],
-                  "13.11 Chapter 13 revision mixed": [],
-                  "13.12 Chapter 13 final review": [],
                 },
               },
             },
@@ -2430,370 +2288,6 @@
           <section><h2>3.6 Chemical Formulae</h2><p>Formulae show the types and numbers of atoms in substances.</p></section>`,
             },
           ],
-          animalDiversity: [
-            {
-              id: "g7-animal-01",
-              title: "Worksheet 1",
-              grade: "Grade 7",
-              lesson: "06. Animal Diversity",
-              description: "Worksheet for Animal Diversity chapter.",
-              type: "PDF Worksheet",
-              filePath: "./Grade 07_06.Animal Diversity/Worksheet 1.pdf",
-            },
-            {
-              id: "g7-animal-02",
-              title: "Worksheet 2",
-              grade: "Grade 7",
-              lesson: "06. Animal Diversity",
-              description: "Additional worksheet for Animal Diversity.",
-              type: "PDF Worksheet",
-              filePath: "./Grade 07_06.Animal Diversity/Worksheet 2.pdf",
-            },
-            {
-              id: "g7-animal-03",
-              title: "Worksheet 3",
-              grade: "Grade 7",
-              lesson: "06. Animal Diversity",
-              description: "Adaptations related worksheet.",
-              type: "PDF Worksheet",
-              filePath: "./Grade 07_06.Animal Diversity/Worksheet 3.pdf",
-            },
-            {
-              id: "g7-animal-04",
-              title: "Worksheet 4",
-              grade: "Grade 7",
-              lesson: "06. Animal Diversity",
-              description: "More practice on adaptations to environment.",
-              type: "PDF Worksheet",
-              filePath: "./Grade 07_06.Animal Diversity/Worksheet 4.pdf",
-            },
-            {
-              id: "g7-animal-05",
-              title: "Worksheet 5",
-              grade: "Grade 7",
-              lesson: "06. Animal Diversity",
-              description: "Dichotomous key practice worksheet.",
-              type: "PDF Worksheet",
-              filePath: "./Grade 07_06.Animal Diversity/Worksheet 5.pdf",
-            },
-            {
-              id: "g7-animal-06",
-              title: "Worksheet 6",
-              grade: "Grade 7",
-              lesson: "06. Animal Diversity",
-              description: "Chapter review worksheet.",
-              type: "PDF Worksheet",
-              filePath: "./Grade 07_06.Animal Diversity/Worksheet 6.pdf",
-            },
-          ],
-          natureOfTheEarth: [
-            {
-              id: "g7-earth-01",
-              title: "WS1 Solar System Earth's Place",
-              grade: "Grade 7",
-              lesson: "08. The Nature of the Earth",
-              description: "Introductory worksheet for the chapter.",
-              type: "PDF Worksheet",
-              filePath:
-                "./Grade 07_08.The Nature of the Earth/WS1_Solar_System_Earths_Place.pdf",
-            },
-            {
-              id: "g7-earth-02",
-              title: "WS2 How Geologists Study Earth",
-              grade: "Grade 7",
-              lesson: "08. The Nature of the Earth",
-              description: "Background worksheet for studying the Earth.",
-              type: "PDF Worksheet",
-              filePath:
-                "./Grade 07_08.The Nature of the Earth/WS2_How_Geologists_Study_Earth.pdf",
-            },
-            {
-              id: "g7-earth-03",
-              title: "WS3 Layers of Earth",
-              grade: "Grade 7",
-              lesson: "08. The Nature of the Earth",
-              description: "Worksheet on the structure of the Earth.",
-              type: "PDF Worksheet",
-              filePath:
-                "./Grade 07_08.The Nature of the Earth/WS3_Layers_of_Earth.pdf",
-            },
-            {
-              id: "g7-earth-04",
-              title: "WS4 Tectonic Plates",
-              grade: "Grade 7",
-              lesson: "08. The Nature of the Earth",
-              description: "Worksheet on tectonic plates and plate tectonics.",
-              type: "PDF Worksheet",
-              filePath:
-                "./Grade 07_08.The Nature of the Earth/WS4_Tectonic_Plates.pdf",
-            },
-            {
-              id: "g7-earth-05",
-              title: "WS5 Advanced Analysis",
-              grade: "Grade 7",
-              lesson: "08. The Nature of the Earth",
-              description: "Extended analysis worksheet.",
-              type: "PDF Worksheet",
-              filePath:
-                "./Grade 07_08.The Nature of the Earth/WS5_Advanced_Analysis.pdf",
-            },
-            {
-              id: "g7-earth-06",
-              title: "WS6 Simplified Support",
-              grade: "Grade 7",
-              lesson: "08. The Nature of the Earth",
-              description: "Support worksheet for simplified reinforcement.",
-              type: "PDF Worksheet",
-              filePath:
-                "./Grade 07_08.The Nature of the Earth/WS6_SimplifiedSupport_GroupC.pdf",
-            },
-            {
-              id: "g7-earth-07",
-              title: "WS7 Chapter Review Test",
-              grade: "Grade 7",
-              lesson: "08. The Nature of the Earth",
-              description: "Chapter review test worksheet.",
-              type: "PDF Worksheet",
-              filePath:
-                "./Grade 07_08.The Nature of the Earth/WS7_Chapter_Review_Test.pdf",
-            },
-          ],
-          humanOrganSystems: [
-            {
-              id: "g8-human-01",
-              title: "Human Organ Systems Document",
-              grade: "Grade 8",
-              lesson: "09. Human organ systems",
-              description:
-                "HTML document containing worksheets for excretory system, nervous system and human skin.",
-              type: "HTML Document",
-              filePath: "./Grade 08/DOC-20260427-WA0028..html",
-            },
-          ],
-          humanCirculatorySystem: [
-            {
-              id: "g9-circulatory-01",
-              title: "6.1 Structure of the human heart",
-              grade: "Grade 9",
-              lesson: "06. The Human Circulatory System",
-              description: "PDF document for heart structure.",
-              type: "PDF Document",
-              filePath:
-                "./Grade 09_6.The Human Circulatory  System/6.1 Structure of the human heart.pdf",
-            },
-            {
-              id: "g9-circulatory-02",
-              title: "6.2 Arteries, veins and capillaries",
-              grade: "Grade 9",
-              lesson: "06. The Human Circulatory System",
-              description: "PDF document for blood vessels.",
-              type: "PDF Document",
-              filePath:
-                "./Grade 09_6.The Human Circulatory  System/6.2 Arteries, veins and capillaries.pdf",
-            },
-            {
-              id: "g9-circulatory-03",
-              title: "6.3 Components of blood and their functions",
-              grade: "Grade 9",
-              lesson: "06. The Human Circulatory System",
-              description: "PDF document for blood components.",
-              type: "PDF Document",
-              filePath:
-                "./Grade 09_6.The Human Circulatory  System/6.3 Components of blood and their functions.pdf",
-            },
-            {
-              id: "g9-circulatory-04",
-              title: "6.4 Blood transfusion",
-              grade: "Grade 9",
-              lesson: "06. The Human Circulatory System",
-              description: "PDF document for blood transfusion.",
-              type: "PDF Document",
-              filePath:
-                "./Grade 09_6.The Human Circulatory  System/6.4 Blood transfusion.pdf",
-            },
-            {
-              id: "g9-circulatory-05",
-              title: "Compatibility of Rhesus factor",
-              grade: "Grade 9",
-              lesson: "06. The Human Circulatory System",
-              description: "Supporting PDF on rhesus factor compatibility.",
-              type: "PDF Document",
-              filePath:
-                "./Grade 09_6.The Human Circulatory  System/Compatibility of Rhesus factor.pdf",
-            },
-            {
-              id: "g9-circulatory-06",
-              title: "Revision chapter 07 grade 09",
-              grade: "Grade 9",
-              lesson: "06. The Human Circulatory System",
-              description: "Revision PDF for the chapter.",
-              type: "PDF Revision",
-              filePath:
-                "./Grade 09_6.The Human Circulatory  System/Revision_chaptr 07_grd 09.pdf",
-            },
-            {
-              id: "g9-circulatory-07",
-              title: "Assessment chapter 07 grade 09",
-              grade: "Grade 9",
-              lesson: "06. The Human Circulatory System",
-              description: "Assessment PDF for the chapter.",
-              type: "PDF Assessment",
-              filePath:
-                "./Grade 09_6.The Human Circulatory  System/Assessment_chptr 07_grd 09.pdf",
-            },
-          ],
-          plantGrowthSubstances: [
-            {
-              id: "g9-plant-01",
-              title: "7.1 Introduction to plant growth substances",
-              grade: "Grade 9",
-              lesson: "07. Plant Growth Substances",
-              description: "Introduction PDF for plant growth substances.",
-              type: "PDF Document",
-              filePath:
-                "./Grade 09_07.Plant Growth Substances/7.1 Introduction to plant growth substances.pdf",
-            },
-            {
-              id: "g9-plant-02",
-              title: "Auxins",
-              grade: "Grade 9",
-              lesson: "07. Plant Growth Substances",
-              description: "PDF document on auxins.",
-              type: "PDF Document",
-              filePath: "./Grade 09_07.Plant Growth Substances/Auxins.pdf",
-            },
-            {
-              id: "g9-plant-03",
-              title: "Gibberellins and Cytokinins",
-              grade: "Grade 9",
-              lesson: "07. Plant Growth Substances",
-              description: "PDF document on gibberellins and cytokinins.",
-              type: "PDF Document",
-              filePath:
-                "./Grade 09_07.Plant Growth Substances/Gibberellins_Cytokinins.pdf",
-            },
-          ],
-          biosphere: [
-            {
-              id: "g10-bio-01",
-              title: "ws13 01 Introduction to Classification",
-              grade: "Grade 10",
-              lesson: "13. Biosphere",
-              description: "Biosphere worksheet PDF.",
-              type: "PDF Worksheet",
-              filePath:
-                "./Grade10_13.Biosphere/ws13_01_Introduction_to_Classification.pdf",
-            },
-            {
-              id: "g10-bio-02",
-              title: "ws13 02 Three Domain System",
-              grade: "Grade 10",
-              lesson: "13. Biosphere",
-              description: "Biosphere worksheet PDF.",
-              type: "PDF Worksheet",
-              filePath:
-                "./Grade10_13.Biosphere/ws13_02_Three_Domain_System.pdf",
-            },
-            {
-              id: "g10-bio-03",
-              title: "ws13 03 Protista and Fungi",
-              grade: "Grade 10",
-              lesson: "13. Biosphere",
-              description: "Biosphere worksheet PDF.",
-              type: "PDF Worksheet",
-              filePath: "./Grade10_13.Biosphere/ws13_03_Protista_and_Fungi.pdf",
-            },
-            {
-              id: "g10-bio-04",
-              title: "ws13 04 Non flowering Plants",
-              grade: "Grade 10",
-              lesson: "13. Biosphere",
-              description: "Biosphere worksheet PDF.",
-              type: "PDF Worksheet",
-              filePath:
-                "./Grade10_13.Biosphere/ws13_04_Non_flowering_Plants.pdf",
-            },
-            {
-              id: "g10-bio-05",
-              title: "ws13 05 Flowering Plants and Animalia",
-              grade: "Grade 10",
-              lesson: "13. Biosphere",
-              description: "Biosphere worksheet PDF.",
-              type: "PDF Worksheet",
-              filePath:
-                "./Grade10_13.Biosphere/ws13_05_Flowering_Plants_and_Animalia.pdf",
-            },
-            {
-              id: "g10-bio-06",
-              title: "ws13 06 Cnidaria Annelida Mollusca",
-              grade: "Grade 10",
-              lesson: "13. Biosphere",
-              description: "Biosphere worksheet PDF.",
-              type: "PDF Worksheet",
-              filePath:
-                "./Grade10_13.Biosphere/ws13_06_Cnidaria_Annelida_Mollusca.pdf",
-            },
-            {
-              id: "g10-bio-07",
-              title: "ws13 07 Arthropoda Echinodermata",
-              grade: "Grade 10",
-              lesson: "13. Biosphere",
-              description: "Biosphere worksheet PDF.",
-              type: "PDF Worksheet",
-              filePath:
-                "./Grade10_13.Biosphere/ws13_07_Arthropoda_Echinodermata.pdf",
-            },
-            {
-              id: "g10-bio-08",
-              title: "ws13 08 Pisces and Amphibia",
-              grade: "Grade 10",
-              lesson: "13. Biosphere",
-              description: "Biosphere worksheet PDF.",
-              type: "PDF Worksheet",
-              filePath:
-                "./Grade10_13.Biosphere/ws13_08_Pisces_and_Amphibia.pdf",
-            },
-            {
-              id: "g10-bio-09",
-              title: "ws13 09 Reptilia Aves Mammalia",
-              grade: "Grade 10",
-              lesson: "13. Biosphere",
-              description: "Biosphere worksheet PDF.",
-              type: "PDF Worksheet",
-              filePath:
-                "./Grade10_13.Biosphere/ws13_09_Reptilia_Aves_Mammalia.pdf",
-            },
-            {
-              id: "g10-bio-10",
-              title: "ws13 10 Binomial Nomenclature",
-              grade: "Grade 10",
-              lesson: "13. Biosphere",
-              description: "Biosphere worksheet PDF.",
-              type: "PDF Worksheet",
-              filePath:
-                "./Grade10_13.Biosphere/ws13_10_Binomial_Nomenclature.pdf",
-            },
-            {
-              id: "g10-bio-11",
-              title: "ws13 11 Chapter 13 Revision Mixed",
-              grade: "Grade 10",
-              lesson: "13. Biosphere",
-              description: "Biosphere revision worksheet PDF.",
-              type: "PDF Revision",
-              filePath:
-                "./Grade10_13.Biosphere/ws13_11_Chapter13_Revision_Mixed.pdf",
-            },
-            {
-              id: "g10-bio-12",
-              title: "ws13 12 Chapter 13 Final Review",
-              grade: "Grade 10",
-              lesson: "13. Biosphere",
-              description: "Biosphere final review worksheet PDF.",
-              type: "PDF Review",
-              filePath:
-                "./Grade10_13.Biosphere/ws13_12_Chapter13_Final_Review.pdf",
-            },
-          ],
         };
 
         const gradeSelect = document.getElementById("gradeSelect");
@@ -3069,9 +2563,7 @@
             .map(function (note) {
               return (
                 '<article class="note-card">' +
-                '<div class="note-hero"><div class="note-meta"><span class="badge">' +
-                escapeHtml(note.type || "Reader Note") +
-                '</span><span class="badge">' +
+                '<div class="note-hero"><div class="note-meta"><span class="badge">Reader Note</span><span class="badge">' +
                 escapeHtml(note.grade) +
                 "</span></div></div>" +
                 '<div class="note-content">' +
@@ -3084,7 +2576,7 @@
                 '<div class="note-actions">' +
                 '<button class="btn btn-primary read-note-btn" data-note-id="' +
                 escapeHtml(note.id) +
-                '"><i class="fas fa-book-open"></i> Open Resource</button>' +
+                '"><i class="fas fa-book-open"></i> Read Note</button>' +
                 "</div></div></article>"
               );
             })
@@ -3108,19 +2600,12 @@
           noteModalTitle.textContent = note.title;
           noteModalGrade.textContent = note.grade;
           noteModalLesson.textContent = note.lesson;
-          if (note.filePath) {
-            noteReaderFrame.src = encodeURI(note.filePath);
-            noteReaderFrame.srcdoc = "";
-          } else {
-            noteReaderFrame.removeAttribute("src");
-            noteReaderFrame.srcdoc = buildReaderDocument(note);
-          }
+          noteReaderFrame.srcdoc = buildReaderDocument(note);
           noteModal.style.display = "flex";
           document.body.style.overflow = "hidden";
         }
         function closeNoteModal() {
           noteModal.style.display = "none";
-          noteReaderFrame.src = "about:blank";
           noteReaderFrame.srcdoc = "";
           document.body.style.overflow = "";
         }
